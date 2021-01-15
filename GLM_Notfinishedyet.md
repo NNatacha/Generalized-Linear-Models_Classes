@@ -388,12 +388,39 @@ Segue que,
 <br/>
 
  Como,
+ 
 <br/>
 
-<p align="center">
-   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cbegin%7Balign*%7D%20Var%5B%5Cepsilon_i%5D%26%3DE%5B%5Cepsilon_i%5D-%5BE%28%5Cepsilon_i%29%5D%5E2%5C%5C%20%5CRightarrow%5Csigma%5E2%26%3DE%5B%5Cepsilon_i%5E2%5D%20%5Cend%7Balign*%7D" />
-   </p>
 
 <br/>
 
  Temos que,
+ 
+<br/>
+
+$$COV(\bar{y},\hat\beta_1)=\frac{1}{n}\sum_{i=1}^{n}a_i\sigma^2=\frac{\sigma^2}{n}\sum_{i=1}^{n}a_i$$
+<br/>
+
+ Deste modo,
+ 
+<br/>
+
+$$COV(\hat\beta_0,\hat\beta_1)=COV(\bar{y},\hat\beta_1)-\frac{\bar{x}\sigma^2}{\sum\limits_{i=1}^{n}(x_i-\bar{x})^2}=-\frac{\bar{x}\sigma^2}{\sum\limits_{i=1}^{n}(x_i-\bar{x})^2}$$
+
+<br/>
+
+**Observações:**
+
+1. Quanto maior o $\sigma^2$, maior a variância dos estimadores.
+<br/>
+2. Quanto maior a variabilidade amostral de $x$, menor a variabilidade dos estimadores.
+
+<br/>
+
+#### Estimação de $\sigma^2$
+
+<br/>
+
+\ Como estimar o parâmetro de dispersão $\sigma^2$ ?
+
+\ Dado que $E[\epsilon_i]=0$, temos que $E(\epsilon_i^2)=\sigma^2$. Assim,
