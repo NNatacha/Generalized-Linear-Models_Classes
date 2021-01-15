@@ -323,8 +323,8 @@ Mostrando se, de fato, a variância de <img src="https://latex.codecogs.com/gif.
 
 <br/>
 
-* **_Obs_**: A _Esperança_ e a _Variância_ de $\hat\beta_0$ foram dadas como exercício para os discentes.
+* **_Obs_**: A _Esperança_ e a _Variância_ de <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Chat%5Cbeta_0" /> foram dadas como exercício para os discentes.
 
 <br/>
 
- Agora, temos que provar que $COV(\bar{y},\hat\beta_1)=0$:
+ Agora, temos que provar que <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20COV%28%5Cbar%7By%7D%2C%5Chat%5Cbeta_1%29%3D0" />:
