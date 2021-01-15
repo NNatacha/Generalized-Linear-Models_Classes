@@ -380,3 +380,20 @@ Por outro lado,
 Segue que,
 
 <br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cbegin%7Balign*%7D%20Cov%5By%2C%5Chat%5Cbeta_1%5D%26%3DE%5B%28%5Cbar%7By%7D-E%5B%5Cbar%7By%7D%5D%29%28%5Chat%5Cbeta_1-E%5B%5Chat%5Cbeta_1%5D%29%5D%3DE%5Cleft%5B%5Cbar%7B%5Cepsilon%7D%5Csum%5Climits_%7Bi%3D1%7D%5Ena_i%5Cepsilon_i%5Cright%5D%5Cnonumber%5C%5C%20%26%3DE%5Cleft%5B%5Cfrac%7B1%7D%7Bn%7D%5Csum%5Climits_%7Bi%3D1%7D%5En%5Cepsilon_i%5Csum%5Climits_%7Bi%3D1%7D%5Ena_i%5Cepsilon_i%5Cright%5D%3D%5Cfrac%7B1%7D%7Bn%7DE%5B%28%5Cepsilon_1&plus;%5Cepsilon_2&plus;...&plus;%5Cepsilon_n%29%28a_1%5Cepsilon_1&plus;a_2%5Cepsilon_2&plus;...&plus;a_n%5Cepsilon_n%29%5D%5C%5C%20%26%3D%5Cfrac%7B1%7D%7Bn%7DE%5Cleft%5B%5Csum%5Climits_%7Bi%3D1%7D%5E%7Bn%7Da_i%5Cepsilon_i%5E2&plus;%5Csum%5Climits_%7Bi%5Cneq%7Bj%7D%7D%5Ena_i%5Cepsilon_i%5Cepsilon_j%5Cright%5D%5Cnonumber%5C%5C%20%26%3D%5Cfrac%7B1%7D%7Bn%7D%5Cleft%5BE%5Cleft%28%5Csum%5Climits_%7Bi%3D1%7D%5Ena_i%5Cepsilon_i%5E2%5Cright%29&plus;E%5Cleft%28%5Csum%5Climits_%7Bi%5Cneq%7Bj%7D%7D%5Ena_i%5Cepsilon_i%5Cepsilon_j%5Cright%29%5Cright%5D%5C%5C%20%26%3D%5Cfrac%7B1%7D%7Bn%7D%5Cleft%5B%5Csum%5Climits_%7Bi%3D1%7D%5EnE%5Cleft%28a_i%5Cepsilon_i%5E2%5Cright%29&plus;%5Csum%5Climits_%7Bi%5Cneq%7Bj%7D%7D%5EnE%5Cleft%28a_i%5Cepsilon_i%5Cepsilon_j%5Cright%29%5Cright%5D%5C%5C%20%26%3D%5Cfrac%7B1%7D%7Bn%7D%5Cleft%5B%5Csum%5Climits_%7Bi%3D1%7D%5Ena_iE%5Cleft%28%5Cepsilon_i%5E2%5Cright%29&plus;%5Csum%5Climits_%7Bi%5Cneq%7Bj%7D%7D%5Ena_iE%5Cleft%28%5Cepsilon_i%5Cepsilon_j%5Cright%29%5Cright%5D%20%5Cend%7Balign*%7D" />
+   </p>
+   
+<br/>
+
+ Como,
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cbegin%7Balign*%7D%20Var%5B%5Cepsilon_i%5D%26%3DE%5B%5Cepsilon_i%5D-%5BE%28%5Cepsilon_i%29%5D%5E2%5C%5C%20%5CRightarrow%5Csigma%5E2%26%3DE%5B%5Cepsilon_i%5E2%5D%20%5Cend%7Balign*%7D" />
+   </p>
+
+<br/>
+
+ Temos que,
