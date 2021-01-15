@@ -327,4 +327,56 @@ Mostrando se, de fato, a variância de <img src="https://latex.codecogs.com/gif.
 
 <br/>
 
- Agora, temos que provar que <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20COV%28%5Cbar%7By%7D%2C%5Chat%5Cbeta_1%29%3D0" />:
+ Agora, temos que provar que <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20COV%28%5Cbar%7By%7D%2C%5Chat%5Cbeta_1%29%3D0" /> :
+ 
+ <br/>
+
+<p align="center">
+   <imgsrc="https://latex.codecogs.com/gif.latex%5Csmall%20%5Cbegin%7Balign*%7D%20%5Cbar%7By%7D%26%3D%5Cfrac%7B1%7D%7Bn%7D%5Csum%5Climits_%7Bi%3D1%7D%5Eny_i%3D%5Cfrac%7B1%7D%7Bn%7D%5Csum%5Climits_%7Bi%3D1%7D%5En%28%5Cbeta_0&plus;%5Cbeta_1x_i&plus;%5Cepsilon_i%29%5Cnonumber%5C%5C%20%26%3D%5Cfrac%7B1%7D%7Bn%7D%5Csum%5Climits_%7Bi%3D1%7D%5En%28%5Cbeta_0&plus;%5Cbeta_1x_i%29&plus;%5Cfrac%7B1%7D%7Bn%7D%5Csum%5Climits_%7Bi%3D1%7D%5En%5Cepsilon_i%5Cnonumber%5C%5C%20%26%3D%5Cfrac%7Bn%5Cbeta_0%7D%7Bn%7D&plus;%5Cbeta_1%5Cfrac%7B%5Csum%5Climits_%7Bi%3D1%7D%5Enx_i%7D%7Bn%7D&plus;%5Cbar%7B%5Cepsilon%7D%3D%5Cbeta_0&plus;%5Cbeta_1%5Cbar%7Bx%7D&plus;%5Cbar%7B%5Cepsilon%7D%20%5Cend%7Balign*%7D" />
+   </p>
+   
+<br/>
+
+ Sabendo que,
+
+<br/>
+
+<p align="center">
+      <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20E%5B%5Cbar%7By%7D%5D%3DE%5B%5Cbeta_0&plus;%5Cbeta_1%5Cbar%7Bx%7D&plus;%5Cbar%7B%5Cepsilon%7D%5D%3DE%5B%5Cbeta_0%5D&plus;E%5B%5Cbeta_1%5Cbar%7Bx%7D%5D&plus;E%5B%5Cbar%7B%5Cepsilon%7D%5D%3D%5Cbeta_0&plus;%5Cbeta_1%5Cbar%7Bx%7D" />
+   </p>
+   
+   </br>
+
+ Daí,
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cbar%7By%7D%3DE%5B%5Cbar%7By%7D%5D&plus;%5Cbar%7B%5Cepsilon%7D%5CRightarrow%20%5Cbar%7B%5Cepsilon%7D%3D%5Cbar%7By%7D-E%5B%5Cbar%7By%7D%5D" />
+   </p>
+   
+<br/>
+ 
+Por outro lado,
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cbegin%7Balign*%7D%20%5Chat%5Cbeta_1%26%3D%5Csum%5Climits_%7Bi%3D1%7D%5Ena_iy_i%3D%5Csum%5Climits_%7Bi%3D1%7D%5Ena_i%28%5Cbeta_0&plus;%5Cbeta_1x_i&plus;%5Cepsilon_i%29%5Cnonumber%5C%5C%20%26%3D%5Cbeta_0%5Csum%5Climits_%7Bi%3D0%7D%5Ena_i&plus;%5Cbeta_1%5Csum%5Climits_%7Bi%3D1%7D%5Ena_ix_i&plus;%5Csum%5Climits_%7Bi%3D1%7D%5Ena_i%5Cepsilon_i%5Cnonumber%5C%5C%20%5CRightarrow%5Chat%5Cbeta_1%26%3D%5Cbeta_1&plus;%5Csum%5Climits_%7Bi%3D1%7D%5Ena_i%5Cepsilon_i%20%5Cend%7Balign*%7D" />
+</p>
+
+<br/>
+
+ Logo,
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Chat%5Cbeta_1-%5Cbeta_1%3D%5Csum%5Climits_%7Bi%3D1%7D%5Ena_i%5Cepsilon_i%5CRightarrow%20%5Chat%5Cbeta_1-E%5B%5Chat%5Cbeta_1%5D%3D%5Csum%5Climits_%7Bi%3D1%7D%5Ena_i%5Cepsilon_i%2C" />
+   </p>
+
+<br/>
+
+Segue que,
+
+<br/>
