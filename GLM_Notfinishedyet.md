@@ -559,3 +559,105 @@ Aplicando o método dos multiplicadores de _Lagrange_, definimos a seguinte fun�
 <br/>
 
  Substituindo <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Clambda_1" /> em ```(4)```, temos:
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cbegin%7Balign*%7D%202c_i-%28-%5Clambda_2%5Cbar%7Bx%7D%29-%5Clambda_2x_i%26%3D0%202c_i&plus;%5Clambda_2%5Cbar%7Bx%7D-%5Clambda_2x_i%3D0%5C%5C%202c_i%26%3D%5Clambda_2x_i-%5Clambda_2%5Cbar%7Bx%7D%5C%5C%20c_i%26%3D%5Cfrac%7B%5Clambda_2%28x_i-%5Cbar%7Bx%7D%29%7D%7B2%7D%2C%20%5Cforall_i%20%5Cquad%5Cmbox%7B%7D%5Cquad%5Cquad%20%5Cqquad%5Cmbox%7B%286%29%7D%5Cquad%20%5Cend%7Balign*%7D" />
+   </p>
+
+<br/>
+
+ Multiplicando ambos os lados de ```(6)``` por <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20x_i" /> e somando as ```n``` igualdades, obtemos:
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%24%24%5Csum%5Climits_%7Bi%3D1%7D%5Enc_ix_i%3D%5Cfrac%7B%5Clambda_2%7D%7B2%7D%5Csum%5Climits_%7Bi%3D1%7D%5Enx_i%28x_i-%5Cbar%7Bx%7D%29" />
+   </p>
+<br/>
+
+ Aplicando a condição ```(3)```:
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%24%241%3D%5Cfrac%7B%5Clambda_2%7D%7B2%7D%5Csum%5Climits_%7Bi%3D1%7D%5Enx_i%28x_i-%5Cbar%7Bx%7D%29%5CRightarrow%5Cfrac%7B%5Clambda_2%7D%7B2%7D%3D%5Cfrac%7B1%7D%7B%5Csum%5Climits_%7Bi%3D1%7D%5Enx_i%28x_i-%5Cbar%7Bx%7D%29%7D%20%5Cquad%5Cquad%20%5Cqquad%5Cmbox%7B%287%29%7D%5Cquad" />
+   </p>
+<br/>
+
+ E, finalmente, substituindo ```(7)``` em ```(6)```, obtemos:
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%24%24c_i%3D%5Cfrac%7B1%7D%7B%5Csum%5Climits_%7Bi%3D1%7D%5En%28x_i-%5Cbar%7Bx%7D%29%7D%5Ccdot%28x_i-%5Cbar%7Bx%7D%29%3D%5Cfrac%7B%28x_i-%5Cbar%7Bx%7D%29%7D%7B%5Csum%5Climits_%7Bi%3D1%7D%5En%28x_i-%5Cbar%7Bx%7D%29%5E2%7D" />
+   </p>
+
+<br/>
+
+ Concluímos, então, que o estimador linear não viesado e de variância minima para <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cbeta_1"/> é:
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%24%24B%3D%5Csum%5Climits_%7Bi%3D1%7D%5Enc_iy_i%3D%5Cfrac%7B%5Csum%5Climits_%7Bi%3D1%7D%5En%28x_i-%5Cbar%7Bx%7D%29yi%7D%7B%5Csum%5Climits_%7Bi%3D1%7D%5En%28x_i-%5Cbar%7Bx%7D%29%5E2%7D"/>
+   </p>
+<br/>
+
+que é o estimador de _MQO_ de <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cbeta_1"/>. A demonstração para <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cbeta_0"/> é análoga.
+
+<br/>
+
+#### Análise da Variância
+
+<br/>
+Decomposição das Somas de Quadrados.
+<br/>
+
+Temos que:
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cbegin%7Balign*%7D%20y_i-%5Cbar%7By%7D%26%3Dy_i-%5Chat%7By_i%7D&plus;%5Chat%7By_i%7D-%5Cbar%7By%7D%5C%5C%20y_i-%5Cbar%7By%7D%26%3D%5Chat%7B%5Cepsilon_i%7D&plus;%5Chat%7By_i%7D-%5Cbar%7By%7D%20%5Cquad%5Cquad%20%5Cqquad%5Cmbox%7B%287%29%7D%5Cquad%20%5Cend%7Balign*%7D"/>
+   </p>
+
+<br/>
+
+Em que <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cepsilon_i"/> são os resídos.
+<br/>
+
+Elevando ambos os membros de ```(1)``` ao quadrado e fazendo o somátorio de ```1``` até ```n```, obtemos:
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cbegin%7Balign*%7D%20%5Csum%5Climits_%7Bi%3D1%7D%5En%28%5Chat%7By_i%7D-%5Cbar%7By%7D%29%5E2%26%3D%5Csum%5Climits_%7Bi%3D1%7D%5En%5B%5Chat%7B%5Cepsilon_i%7D&plus;%28%5Chat%7By_i%7D-%5Cbar%7By%7D%29%5D%5E2%5C%5C%20%26%3D%5Csum%5Climits_%7Bi%3D1%7D%5En%5Chat%7B%5Cepsilon_i%7D&plus;2%5Csum%5Climits_%7Bi%3D1%7D%5En%5Cepsilon_i%28%5Chat%7By_i%7D-%5Cbar%7By%7D%29&plus;%5Csum%5Climits_%7Bi%3D1%7D%5En%28%5Chat%7By_i%7D-%5Cbar%7By%7D%29%5E2%20%5Cend%7Balign*%7D"/>
+   </p>
+   
+   </br>
+
+Vamos mostrar que <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%24%24%5Csum%5Climits_%7Bi%3D1%7D%5En%5Chat%7B%5Cepsilon_i%7D%28%5Chat%7By_i%7D-%5Cbar%7By%7D%29%3D0"/>.
+
+<br/>
+
+De fato,
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cbegin%7Balign*%7D%20%5Csum%5Climits_%7Bi%3D1%7D%5En%5Chat%7B%5Cepsilon_i%7D%28%5Chat%7By_i%7D-%5Cbar%7By%7D%29%26%3D%5Csum%5Climits_%7Bi%3D1%7D%5En%5Chat%7B%5Cepsilon_i%7D%5Chat%7By_i%7D-%5Csum%5Climits_%7Bi%3D1%7D%5En%5Chat%7B%5Cepsilon_i%7D%5Cbar%7By%7D%3D%5Csum%5Climits_%7Bi%3D1%7D%5En%5Chat%7B%5Cepsilon_i%7D%5Chat%7By_i%7D-%5Cbar%7By%7D%5Csum%5Climits_%7Bi%3D1%7D%5En%5Chat%5Cepsilon_i%5C%5C%20%5CRightarrow%5Csum%5Climits_%7Bi%3D1%7D%5En%5Chat%5Cepsilon_i%26%3D%5Csum%5Climits_%7Bi%3D1%7D%5En%28y_i-%5Chat%7By%7D%29%3D%5Csum%5Climits_%7Bi%3D1%7D%5En%5By_i-%28%5Chat%5Cbeta_0&plus;%5Chat%5Cbeta_1x_i%29%5D%5C%5C%20%26%3D%5Csum%5Climits_%7Bi%3D1%7D%5Eny_i-n%5Chat%5Cbeta_0-%5Chat%5Cbeta_1%5Csum%5Climits_%7Bi%3D1%7D%5Enx_i%5C%5C%20%5CRightarrow%20%5Csum%5Climits_%7Bi%3D1%7D%5En%5Chat%5Cepsilon_i%5Chat%7By_i%7D%26%3D%5Csum%5Climits_%7Bi%3D1%7D%5En%5Chat%5Cepsilon_i%28%5Chat%5Cbeta_0&plus;%5Chat%5Cbeta_1x_i%29%3D%5Chat%5Cbeta_0%5Csum%5Climits_%7Bi%3D1%7D%5En%5Chat%5Cepsilon_i&plus;%5Chat%5Cbeta_1%5Csum%5Climits_%7Bi%3D1%7D%5En%5Chat%5Cepsilon_ix_i%5C%5C%20%5Chat%5Cbeta_1%5Csum%5Climits_%7Bi%3D1%7D%5En%28y_i-%5Chat%7By_i%7D%29x_i%26%3D%5Chat%5Cbeta_1%7B%5Cleft%5C%7B%5Csum%5Climits_%7Bi%3D1%7D%5En%5By_ix_i-%28%5Chat%5Cbeta_0&plus;%5Chat%5Cbeta_1x_i%29x_i%5D%5Cright%5C%7D%7D%5C%5C%20%26%3D%5Chat%5Cbeta_1%5Cleft%5B%5Csum%5Climits_%7Bi%3D1%7D%5En%28y_ix_i-%5Chat%5Cbeta_0x_i&plus;%5Chat%5Cbeta_1x_i%5E2%29%5Cright%5D%5C%5C%20%5Cend%7Balign*%7D"/>
+   </p>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5CRightarrow%5Chat%5Cbeta_1%5Cleft%5B%5Csum%5Climits_%7Bi%3D1%7D%5Eny_ix_i%5Chat%5Cbeta_0%5Csum%5Climits_%7Bi%3D1%7D%5Enx_i&plus;%5Chat%5Cbeta_1%5Csum%5Climits_%7Bi%3D1%7D%5Enx_i%5E2%5Cright%5D%3D0"/>
+   </p>
+
+Assim,
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%24%24%5Csum%5Climits_%7Bi%3D1%7D%5En%28y_i-%5Cbar%7By%7D%29%5E2%3D%5Csum%5Climits_%7Bi%3D1%7D%5En%5Chat%5Cepsilon_i%5E2&plus;%5Csum%5Climits_%7Bi%3D1%7D%5En%28%5Chat%7By_i%7D-%5Cbar%7By%7D%29%5E2"/>
+   </p>
+
+<br/>
+
+Essa relação mostra que a variação dos valores de ```y```, em torno de sua média <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cbar%7By%7D"/>, pode ser dividida em duas partes:
+
+<br/>
