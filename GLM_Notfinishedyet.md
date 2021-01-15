@@ -697,3 +697,28 @@ TOTAL        | ```n-1```    | <img src="https://latex.codecogs.com/gif.latex?%5C
 03. ```SQReg``` e ```SQRes``` são independentes.
 
 <br/>
+
+Segue que a estatística de teste:
+
+<br/>
+
+<p align="center">
+<img src="https://latex.codecogs.com/gif.latex?F%3D%5Cfrac%7B%5Cfrac%7BSQReg%7D%7B%5Cfrac%7B%5Csigma%5E2%7D%7B1%7D%7D%7D%7B%5Cfrac%7BSQRes%7D%7B%5Cfrac%7B%5Csigma%5E2%7D%7B1%7D%7D%7D%20%3D%5Cfrac%7B%5Cfrac%7BSQReg%7D%7B%5Csigma%5E2%7D%7D%7B%5Cfrac%7BSQRes%7D%7B%5Csigma%5E2%7D%7D%20%3D%5Cfrac%7B%5Cchi%5E2_%7B%281%29%7D%7D%7B%5Cchi%5E2_%7B%28n-2%29%7D%7D%5Csim%20F_%7B%5B1%3B%28n-2%29%5D%7D"/>
+   </p>
+ 
+ <br/>
+ 
+ Essa estatística pode ser usada para testar:
+
+<br/>
+
+<img src="https://latex.codecogs.com/gif.latex?%5Csmall%20H_0%3A%5Cbeta_1%3D0%24%20contra%20%24H_1%3A%5Cbeta_1%5Cneq0"/>, ao nível de significância adotado.
+
+<br/>
+
+#### Modelo Linear Geral (Amostral)
+
+<br/>
+
+Consideremos uma amostra de ```n``` observações <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%28x_%7B1i%7D%2Cx_%7B2i%7D%2C...%2Cx_%7Bki%7D%3By_%7Bi%7D%29%24%20com%20%24i%3D1%2C...%2Cn"/>. O modelo linear geral é dado por:
+<br/>
