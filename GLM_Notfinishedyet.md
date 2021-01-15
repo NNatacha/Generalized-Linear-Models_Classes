@@ -309,7 +309,7 @@ Mostrando se, de fato, a variância de <img src="https://latex.codecogs.com/gif.
 
 <br/>
 
- Agora, verificaremos, se <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20COV%28%5Chat%5Cbeta_0%2C%5Chat%5Cbeta_1%29%3D-%5Cfrac%7B%5Csigma%5E2%5Cbar%7Bx%7D%7D%7B%5Csum%5Climits_%7Bi%3D1%7D%5E%7Bn%7D%28x_i-%5Cbar%7Bx%7D%29%5E2%7D"/>
+ Agora, verificaremos, se <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20COV%28%5Chat%5Cbeta_0%2C%5Chat%5Cbeta_1%29%3D-%5Cfrac%7B%5Csigma%5E2%5Cbar%7Bx%7D%7D%7B%5Csum%5Climits_%7Bi%3D1%7D%5E%7Bn%7D%28x_i-%5Cbar%7Bx%7D%29%5E2%7D"/> :
 
 <br/>
 
@@ -391,6 +391,9 @@ Segue que,
  
 <br/>
 
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cbegin%7Balign*%7D%20Var%5B%5Cepsilon_i%5D%26%3DE%5B%5Cepsilon_i%5D-%5BE%28%5Cepsilon_i%29%5D%5E2%20%5CRightarrow%5Csigma%5E2%26%3DE%5B%5Cepsilon_i%5E2%5D%20%5Cend%7Balign*%7D" />
+   </p>
 
 <br/>
 
@@ -398,7 +401,7 @@ Segue que,
  
 <br/>
 
-$$COV(\bar{y},\hat\beta_1)=\frac{1}{n}\sum_{i=1}^{n}a_i\sigma^2=\frac{\sigma^2}{n}\sum_{i=1}^{n}a_i$$
+
 <br/>
 
  Deste modo,
