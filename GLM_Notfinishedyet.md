@@ -516,5 +516,7 @@ Podemos mostrar que um estimador não viesado para <img src="https://latex.codec
 
 Substituindo ```(2)``` e ```(3)``` em ```(1)```:
 
-
 <br/>
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%24%24%20B%3D%5Cbeta_0%5Ccdot0&plus;%5Cbeta_1%5Ccdot%7B1%7D&plus;%5Csum%5Climits_%7Bi%3D1%7D%5Enc_i%5Cepsilon_i%5CRightarrow%20B%3D%5Cbeta_1&plus;%5Csum%5Climits_%7Bi%3D1%7D%5Enc_i%5Cepsilon_i%5CRightarrow%20B-%5Cbeta_1%3D%5Csum%5Climits_%7Bi%3D1%7D%5Enc_i%5Cepsilon_i" />
+  </p>
