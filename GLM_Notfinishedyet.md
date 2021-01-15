@@ -420,14 +420,15 @@ Segue que,
 **Observações:**
 
 1. Quanto maior o <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Csigma%5E2" />, maior a variância dos estimadores.
-<br/>
-2. Quanto maior a variabilidade amostral de ```x```, menor a variabilidade dos estimadores.
+
+2. Quanto maior a variabilidade amostral de x, menor a variabilidade dos estimadores.
 
 <br/>
 
 #### Estimação de <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Csigma%5E2" />
 <br/>
- Como estimar o parâmetro de dispersão <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Csigma%5E2" /> ?
+
+ Como estimar o parâmetro de dispersão <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Csigma%5E2" />?
 
  Dado que <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20E%5B%5Cepsilon_i%5D%3D0" />, temos que <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20E%28%5Cepsilon_i%5E2%29%3D%5Csigma%5E2" />. Assim,
  
