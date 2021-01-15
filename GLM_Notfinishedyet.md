@@ -401,6 +401,9 @@ Segue que,
  
 <br/>
 
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20COV%28%5Cbar%7By%7D%2C%5Chat%5Cbeta_1%29%3D%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi%3D1%7D%5E%7Bn%7Da_i%5Csigma%5E2%3D%5Cfrac%7B%5Csigma%5E2%7D%7Bn%7D%5Csum_%7Bi%3D1%7D%5E%7Bn%7Da_i" />
+   </p>
 
 <br/>
 
@@ -408,22 +411,24 @@ Segue que,
  
 <br/>
 
-$$COV(\hat\beta_0,\hat\beta_1)=COV(\bar{y},\hat\beta_1)-\frac{\bar{x}\sigma^2}{\sum\limits_{i=1}^{n}(x_i-\bar{x})^2}=-\frac{\bar{x}\sigma^2}{\sum\limits_{i=1}^{n}(x_i-\bar{x})^2}$$
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20COV%28%5Chat%5Cbeta_0%2C%5Chat%5Cbeta_1%29%3DCOV%28%5Cbar%7By%7D%2C%5Chat%5Cbeta_1%29-%5Cfrac%7B%5Cbar%7Bx%7D%5Csigma%5E2%7D%7B%5Csum%5Climits_%7Bi%3D1%7D%5E%7Bn%7D%28x_i-%5Cbar%7Bx%7D%29%5E2%7D%3D-%5Cfrac%7B%5Cbar%7Bx%7D%5Csigma%5E2%7D%7B%5Csum%5Climits_%7Bi%3D1%7D%5E%7Bn%7D%28x_i-%5Cbar%7Bx%7D%29%5E2%7D" />
+   </p>
 
 <br/>
 
 **Observações:**
 
-1. Quanto maior o $\sigma^2$, maior a variância dos estimadores.
+1. Quanto maior o <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Csigma%5E2" />, maior a variância dos estimadores.
 <br/>
-2. Quanto maior a variabilidade amostral de $x$, menor a variabilidade dos estimadores.
-
-<br/>
-
-#### Estimação de $\sigma^2$
+2. Quanto maior a variabilidade amostral de ```x```, menor a variabilidade dos estimadores.
 
 <br/>
 
-\ Como estimar o parâmetro de dispersão $\sigma^2$ ?
+#### Estimação de <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Csigma%5E2" />
 
-\ Dado que $E[\epsilon_i]=0$, temos que $E(\epsilon_i^2)=\sigma^2$. Assim,
+<br/>
+
+ Como estimar o parâmetro de dispersão<img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Csigma%5E2" />?
+
+ Dado que <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20E%5B%5Cepsilon_i%5D%3D0" />, temos que <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20E%28%5Cepsilon_i%5E2%29%3D%5Csigma%5E2" />. Assim,
