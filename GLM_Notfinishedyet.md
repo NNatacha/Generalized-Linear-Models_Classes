@@ -722,3 +722,42 @@ Segue que a estatística de teste:
 
 Consideremos uma amostra de ```n``` observações <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%28x_%7B1i%7D%2Cx_%7B2i%7D%2C...%2Cx_%7Bki%7D%3By_%7Bi%7D%29%24%20com%20%24i%3D1%2C...%2Cn"/>. O modelo linear geral é dado por:
 <br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20y_%7Bi%7D%20%3D%20%5Cbeta_%7B0%7D%20&plus;%20%5Cbeta_%7B1%7D%20x_%7B1i%7D%20&plus;%20...%20&plus;%20%5Cbeta_%7Bk%7Dx_%7Bki%7D%20&plus;%20%5Cepsilon_%7Bi%7D%2C%20%5Cquad%5Cmbox%7Bsendo%20que%20i%3D%201%2C%20...%2C%20n.%7D%5Cquad%5Cmbox%7B%7D%5Cquad%5Cquad%20%5Cqquad%5Cmbox%7B%281%29%7D%5Cquad"/>
+   </p>
+
+<br/>
+Em que:
+<br/>
+
+- <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20E%5B%5Cvarepsilon_%7Bi%7D%5D%20%3D%200%2C%20%5Cforall_%7Bi%7D"/>; 
+<br/>
+
+- <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20y_i"/> é uma v.a. (só que observável);
+<br/>
+
+- <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20x_ji"/> é a variável não aleatória e observável pertencente a um domínio ```D```, com <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20j%20%3D%201%2C...%2Ck"/> e <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20i%20%3D%201%2C...%2Cn"/>; 
+<br/>
+
+- <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cbeta_%7Bj%7D"/>, <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20j%20%3D%200%2C...%2Ck"/> são parâmetros desconhecidos e definidos em um espaço paramétrico;  
+<br/>
+
+- <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cepsilon_%7Bi%7D"/>'s são V.A.'s não observáveis, onde 
+<p align="center>
+          <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%24%24COV%5B%5Cvarepsilon_%7Bi%7D%2C%5Cvarepsilon_%7Bl%7D%5D%3D%5Csigma%5E2_%7Bil%7D%2C%5Cquad%5Cmbox%7B%7D%5Cquad%5Cquad%20i%20%3D%201%2C...%2Cn%20%5Cquad%5Cmbox%7Be%7D%5Cquad%20l%20%3D%201%2C...%2Cn"/>.
+                     </p>
+
+<br/>
+
+Em notação matricial, o modelo ```(1)``` fica dado por:
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%24%24%5Cmathbf%7BY%3DX%5Cbeta&plus;%5Cepsilon%7D"/>
+   </p>
+
+<br/>
+
+Sendo,
+<br/>
