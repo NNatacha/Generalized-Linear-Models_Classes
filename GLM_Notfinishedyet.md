@@ -473,7 +473,6 @@ Podemos mostrar que um estimador não viesado para <img src="https://latex.codec
 <br/>
 
 #### Teorema de Gauss-Markov
-
 <br/>
 
  Sob condições do modelo, temos que os estimadores de _MQO_ são não viesados e de variância mínima.
