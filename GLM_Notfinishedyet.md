@@ -505,18 +505,16 @@ Podemos mostrar que um estimador não viesado para <img src="https://latex.codec
 
  Para que ```B``` seja um estimador  não viesado para <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cbeta_1" />, devemos observar que,
 <br/>
-$$
-\sum\limits_{i=1}^nc_i=0 \quad\mbox{}\quad\quad \qquad\mbox{(2)}\quad
-$$
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%24%24%5Csum%5Climits_%7Bi%3D1%7D%5Enc_i%3D0%20%5Cquad%5Cmbox%7B%7D%5Cquad%5Cquad%20%5Cqquad%5Cmbox%7B%282%29%7D%5Cquad" />
+   </p>
 <br/>
-$$
-\sum\limits_{i=1}^nc_ix_i=1 \quad\mbox{}\quad\quad \qquad\mbox{(3)}\quad
-$$
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%24%24%20%5Csum%5Climits_%7Bi%3D1%7D%5Enc_ix_i%3D1%20%5Cquad%5Cmbox%7B%7D%5Cquad%5Cquad%20%5Cqquad%5Cmbox%7B%283%29%7D%5Cquad" />
+   </p>
 <br/>
 
-Substituindo $(2)$ e $(3)$ em $(1)$:
+Substituindo ```(2)``` e ```(3)``` em ```(1)```:
 
-$$
-B=\beta_0\cdot0+\beta_1\cdot{1}+\sum\limits_{i=1}^nc_i\epsilon_i\Rightarrow B=\beta_1+\sum\limits_{i=1}^nc_i\epsilon_i\Rightarrow B-\beta_1=\sum\limits_{i=1}^nc_i\epsilon_i
-$$
+
 <br/>
