@@ -481,7 +481,6 @@ Podemos mostrar que um estimador não viesado para <img src="https://latex.codec
 <br/>
 
 **Demonstração**:
-
 <br/>
 
  Consideremos um estimador linear qualquer de <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cbeta_1" />. Digamos:
@@ -490,4 +489,34 @@ Podemos mostrar que um estimador não viesado para <img src="https://latex.codec
 
 <p align="center">
    <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cbegin%7Balign*%7D%20B%3D%5Csum%5Climits_%7Bi%3D1%7D%5Enc_iy_i%26%3D%5Csum%5Climits_%7Bi%3D1%7D%5Enc_i%28%5Cbeta_0&plus;%5Cbeta_1x_i&plus;%5Cepsilon_i%29%5C%5C%20%26%3D%5Cbeta_0%5Csum%5Climits_%7Bi%3D1%7D%5Enc_i&plus;%5Cbeta_1%5Csum%5Climits_%7Bi%3D1%7D%5Enc_ix_i&plus;%5Csum%5Climits_%7Bi%3D1%7D%5Enc_i%5Cepsilon_i%20%5Cquad%5Cmbox%7B%7D%5Cquad%5Cquad%20%5Cqquad%5Cmbox%7B%281%29%7D%5Cquad%20%5Cend%7Balign*%7D" />
+<br/>
+   
+ Lembrando que <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20E%5B%5Cepsilon_i%5D%3D0%20%5Cquad%20%5Cforall_i" />, temos que
+<br/>
+
+   <p align="center">
+      <img src=
+"https://latex.codecogs.com/gif.latex?%5Csmall%20%24%24E%5BB%5D%3D%5Cbeta_0%5Csum%5Climits_%7Bi%3D1%7D%5Enc_i&plus;%5Cbeta_1%20%5Csum%5Climits_%7Bi%3D1%7D%5Enc_ix_i" />
+      </p>
+<br/>
+
+**OBS**: Considerar <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20x_i"/> fixo, ou seja, <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20x_i"/> não é uma V.A. .
+<br/>
+
+ Para que ```B``` seja um estimador  não viesado para <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cbeta_1" />, devemos observar que,
+<br/>
+$$
+\sum\limits_{i=1}^nc_i=0 \quad\mbox{}\quad\quad \qquad\mbox{(2)}\quad
+$$
+<br/>
+$$
+\sum\limits_{i=1}^nc_ix_i=1 \quad\mbox{}\quad\quad \qquad\mbox{(3)}\quad
+$$
+<br/>
+
+Substituindo $(2)$ e $(3)$ em $(1)$:
+
+$$
+B=\beta_0\cdot0+\beta_1\cdot{1}+\sum\limits_{i=1}^nc_i\epsilon_i\Rightarrow B=\beta_1+\sum\limits_{i=1}^nc_i\epsilon_i\Rightarrow B-\beta_1=\sum\limits_{i=1}^nc_i\epsilon_i
+$$
 <br/>
