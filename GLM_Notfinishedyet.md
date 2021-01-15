@@ -661,3 +661,39 @@ Assim,
 Essa relação mostra que a variação dos valores de ```y```, em torno de sua média <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cbar%7By%7D"/>, pode ser dividida em duas partes:
 
 <br/>
+
+Uma que é explicada pela regressão,<img src="https://latex.codecogs.com/gif.latex?%5Ctiny%20%5Cleft%5B%5Csum%5Climits_%7Bi%3D1%7D%5En%28%5Chat%7By_i%7D-%5Cbar%7By%7D%29%5E2%5Cright%5D"/> e a outra <img src="https://latex.codecogs.com/gif.latex?%5Ctiny%20%24%24%5Cleft%28%5Csum%5Climits_%7Bi%3D1%7D%5En%20%5Chat%5Cepsilon_i%5E2%5Cright%29"/>, devido ao fato de que nem todos os pontos estão sobre a reta de regressão (que é a parte não explicada pela regressão). Ou seja, a _SQRes_ representa os diversos fatores não controlados ou explicados pelo modelo adotado.
+
+<br/>
+
+A soma dos quadrados dos resíduos tem ```(n-2)``` graus de liberdade, que obtemos por diferença ```(n-1)```:
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%24%24%20%28n-1%29%3D%28n-2%29&plus;1"/>
+   </p>
+
+<br/>
+
+ANOVA
+
+F.V          |  G.L      |   SQ         |       QM   | F
+:------------ | :---------: | :-------------:| :-----------:| :-------:
+Regressão    |  1        | <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Chat%5Cbeta_2%5Csum%5Climits_%7Bi%3D1%7D%5En%28x_i-%5Cbar%7Bx%7D%29%5E2"/> | <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cfrac%7BSQReg%7D%7B1%7D"/>| <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cfrac%7BQMReg%7D%7BQMRes%7D"/>
+Resíduos     | ```n-2```     | Diferença | <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cfrac%7BSQRes%7D%7Bn-2%7D"/>|
+TOTAL        | ```n-1```    | <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Csum%5Climits_%7Bi%3D1%7D%5En%28y_i-%5Cbar%7By%7D%29%5E2"/> |
+
+ Temos que <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20H_0%3D%5Cbeta_1"/>. Sob <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20H_0"/>, temos:
+
+<br/>
+
+01. <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cfrac%7BSQReg%7D%7B%5Csigma%5E2%7D%5Csim%5Cchi%5E2_%7B%281%29%7D"/>
+<br/>
+
+02. <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cfrac%7BSQRes%7D%7B%5Csigma%5E2%7D%5Csim%5Cchi%5E2_%7B%28n-2%29%7D"/>
+<br/>
+
+03. ```SQReg``` e ```SQRes``` são independentes.
+
+<br/>
