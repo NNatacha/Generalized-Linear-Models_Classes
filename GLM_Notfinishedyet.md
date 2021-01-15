@@ -520,3 +520,43 @@ Substituindo ```(2)``` e ```(3)``` em ```(1)```:
 <p align="center">
    <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%24%24%20B%3D%5Cbeta_0%5Ccdot0&plus;%5Cbeta_1%5Ccdot%7B1%7D&plus;%5Csum%5Climits_%7Bi%3D1%7D%5Enc_i%5Cepsilon_i%5CRightarrow%20B%3D%5Cbeta_1&plus;%5Csum%5Climits_%7Bi%3D1%7D%5Enc_i%5Cepsilon_i%5CRightarrow%20B-%5Cbeta_1%3D%5Csum%5Climits_%7Bi%3D1%7D%5Enc_i%5Cepsilon_i" />
   </p>
+
+<br/>
+
+ A variância de ```B``` é dada por:
+<br/>
+
+<p align="center">
+<img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cbegin%7Balign*%7D%20Var%5BB%5D%26%3DE%5B%28B-E%28B%29%5E2%29%5D%5C%5C%20%26%3DE%5B%28B-%5Cbeta_1%29%5E2%5D%3DE%5Cleft%5B%5Cleft%28%5Csum%5Climits_%7Bi%3D1%7D%5Enc_i%5Cepsilon_i%5Cright%29%5E2%5Cright%5D%5C%5C%20%26%3DE%5B%28c_1%5Cepsilon_1&plus;...&plus;c_n%5Cepsilon_n%29%28c_1%5Cepsilon_1&plus;...&plus;c_n%5Cepsilon_n%29%5D%5C%5C%20%26%3DE%5Cleft%5B%5Csum%5Climits_%7Bi%3D1%7D%5Enc_i%5E2%5Cepsilon_i%5E2&plus;%5Csum%5Climits_%7Bi%5Cneq%7Bj%7D%7D%5Enc_ic_j%5Cepsilon_i%5Cepsilon_j%5Cright%5D%3DE%5Cleft%5B%5Csum%5Climits_%7Bi%3D1%7D%5Enc_i%5E2%5Cepsilon_i%5E2%5Cright%5D&plus;E%5Cleft%5B%5Csum%5Climits_%7B%5Cneq%7Bj%7D%7D%5Enc_ic_j%5Cepsilon_i%5Cepsilon_j%5Cright%5D%5C%5C%20%26%3D%5Csum%5Climits_%7Bi%3D1%7D%5Enc_i%5E2E%5B%5Cepsilon_i%5E2%5D&plus;%5Csum%5Climits_%7Bi%3D1%7D%5Enc_ic_jE%5B%5Cepsilon_i%5Cepsilon_j%5D%3D%5Csum%5Climits_%7Bi%3D1%7D%5Enc_i%5Csigma%5E2%5C%5C%20%26%3D%5Csigma%5E2%5Csum%5Climits_%7Bi%3D1%7D%5Enc_i%5E2%20%5Cend%7Balign*%7D" />
+   </p>
+
+<br/>
+
+Agora, temos que determinar os valores de <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20c_i" />que minimizam a variância de ```B``` sujeita às condições ```(2)``` e ```(3)```.
+<br/>
+Aplicando o método dos multiplicadores de _Lagrange_, definimos a seguinte função:
+<br/>
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%24%24F%3D%5Csum%5Climits_%7Bi%3D1%7D%5Enc_i-%5Clambda_1%5Cleft%28%5Csum%5Climits_%7Bi%3D1%7D%5Enc_i-0%5Cright%29-%5Clambda_2%5Cleft%28%5Csum%5Climits_%7Bi%3D1%7Dc_ix_i-1%5Cright%29" />
+   </p>
+<br/>
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%24%24%5Cfrac%7B%5Cpartial%7BF%7D%7D%7B%5Cpartial%7Bc_i%7D%7D%3D2c_i-%5Clambda_1-%5Clambda_2x_i%3D0%20%5Cquad%5Cmbox%7B%7D%5Cquad%5Cquad%20%5Cqquad%5Cmbox%7B%284%29%7D%5Cquad"/>
+   </p>
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%24%24%5CRightarrow%202%5Csum%5Climits_%7Bi%3D1%7D%5Enc_i-n%5Clambda_1-%5Clambda_2%5Csum%5Climits_%7Bi%3D1%7D%5Enx_i%3D0%20%5Cquad%5Cmbox%7B%7D%5Cquad%5Cquad%20%5Cqquad%5Cmbox%7B%285%29%7D%5Cquad"/>
+   </p>
+<br/>
+
+ Substituindo a condição ```(2)``` em ```(5)```
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cbegin%7Balign*%7D%20-n%5Clambda_1-%5Clambda_2%5Csum%5Climits_%7Bi%3D1%7D%5Enx_i%26%3D0%20%5CRightarrow-n%5Clambda_1%3D%5Clambda_2%5Csum%5Climits_%7Bi%3D1%7D%5Enx_i%5C%5C%20%5Clambda_1%26%3D%5Clambda_2%5Cfrac%7B%5Csum%5Climits_%7Bi%3D1%7D%5Enx_i%7D%7Bn%7D%5C%5C%20%5Clambda_1%26%3D-%5Clambda_2%5Cbar%7Bx%7D%20%5Cend%7Balign*%7D"/>
+   </p>
+
+<br/>
+
+ Substituindo <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Clambda_1" /> em ```(4)```, temos:
