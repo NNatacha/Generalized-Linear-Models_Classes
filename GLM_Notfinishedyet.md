@@ -49,9 +49,9 @@ Sobre R Markdown, pode ser consultada [Aqui](http://www.leg.ufpr.br/~fernandomay
 <br/>
 <br/>
 
-Apostilas correspondentes à disciplina "<span style="color: blue">**Modelos Lineares Generalizados**</span>"
+Apostilas correspondentes à disciplina "<span style="color: blue">**Modelos Lineares Generalizados**</span>":
 
-[Gilberto de Paula](https://www.ime.usp.br/~giapaula/texto_2013.pdf) e [Gauss e Clarice](http://www.lce.esalq.usp.br/arquivos/aulas/2010/LCE5868/livro.pdf)
+[Gilberto de Paula](https://www.ime.usp.br/~giapaula/texto_2013.pdf) e [Gauss e Clarice](http://www.lce.esalq.usp.br/arquivos/aulas/2010/LCE5868/livro.pdf).
 
 <br/>
 <br/>
@@ -426,9 +426,42 @@ Segue que,
 <br/>
 
 #### Estimação de <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Csigma%5E2" />
-
 <br/>
-
- Como estimar o parâmetro de dispersão<img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Csigma%5E2" />?
+ Como estimar o parâmetro de dispersão <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Csigma%5E2" /> ?
 
  Dado que <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20E%5B%5Cepsilon_i%5D%3D0" />, temos que <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20E%28%5Cepsilon_i%5E2%29%3D%5Csigma%5E2" />. Assim,
+ 
+ <p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20E%5Cleft%5B%5Csum%5Climits_%7Bi%3D1%7D%5E%7Bn%7D%5Cepsilon_i%5E2%5Cright%5D%3D%5Csum_%7Bi%3D1%7D%5E%7Bn%7DE%28%5Cepsilon_i%5E2%29%3D%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%5Csigma%5E2%3Dn%5Csigma%5E2" />
+   </p>
+ 
+<br/>
+e, portanto,
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20E%5Cleft%5B%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%5Cfrac%7B%5Cepsilon_i%5E2%7D%7Bn%7D%5Cright%5D%3D%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi%3D1%7D%5E%7Bn%7DE%5B%5Cepsilon_i%5E2%5D%3D%5Cfrac%7B1%7D%7Bn%7Dn%5Csigma%5E2%3D%5Csigma%5E2" />
+   </p>
+   
+   </br>
+
+ Deste modo, <img src="https://latex.codecogs.com/gif.latex?%5Ctiny%20%5Cfrac%7B1%7D%7Bn%7D%5Csum%5Climits_%7Bi%3D1%7D%5E%7Bn%7D%5Cepsilon_i%5E2" /> será um estimador não viesado para <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Csigma%5E2" />.
+<br/>
+*PROBLEMA:* Os erros são desconhecidos, portanto, não podemos usá-lo para estimar <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Csigma%5E2" />.
+<br/>
+
+* Idéia: Usar os estimadores dos erros;
+* Erro: <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cepsilon%3Dy_i-%5Cbeta_0-%5Cbeta_1x_i" />;
+* Resíduo: <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Chat%5Cepsilon_i%3Dy_i-%5Chat%5Cbeta_0-%5Chat%5Cbeta_1x_i" />.
+
+ Assim, estimaremos a variância <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Csigma%5E2" />, usando
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%24%24%5Cfrac%7B1%7D%7Bn%7D%5Csum%5Climits_%7Bi%3D1%7D%5E%7Bn%7D%5Chat%5Cepsilon_i%5E2" />
+   </p>
+ No entanto, este estimador é viesado.
+<br/>
+
+Podemos mostrar que um estimador não viesado para <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Csigma%5E2" /> será dado por:
+<br/>
