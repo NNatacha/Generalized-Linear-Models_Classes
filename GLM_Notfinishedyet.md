@@ -744,9 +744,9 @@ Em que:
 <br/>
 
 - <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cepsilon_%7Bi%7D"/>'s são V.A.'s não observáveis, onde 
-<p align="center>
-          <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%24%24COV%5B%5Cvarepsilon_%7Bi%7D%2C%5Cvarepsilon_%7Bl%7D%5D%3D%5Csigma%5E2_%7Bil%7D%2C%5Cquad%5Cmbox%7B%7D%5Cquad%5Cquad%20i%20%3D%201%2C...%2Cn%20%5Cquad%5Cmbox%7Be%7D%5Cquad%20l%20%3D%201%2C...%2Cn"/>.
-                     </p>
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%24%24COV%5B%5Cvarepsilon_%7Bi%7D%2C%5Cvarepsilon_%7Bl%7D%5D%3D%5Csigma%5E2_%7Bil%7D%2C%5Cquad%5Cmbox%7B%7D%5Cquad%5Cquad%20i%20%3D%201%2C...%2Cn%20%5Cquad%5Cmbox%7Be%7D%5Cquad%20l%20%3D%201%2C...%2Cn"/>.
+   </p>
 
 <br/>
 
