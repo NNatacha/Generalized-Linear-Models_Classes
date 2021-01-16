@@ -1185,3 +1185,42 @@ Como,
    </p>
 
 <br/>
+3. <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7B%5Chat%7BY%7D%5ETr%7D%3D0"/>
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20%5Cbf%7B%5Chat%7BY%7D%5ETr%7D%3D%5Cbf%7B%28X%5Chat%7B%5Cbeta%7D%29%5ET%28I-H%29Y%7D%20%26%3D%20%5Cbf%7B%5Chat%7B%5Cbeta%7D%5ETX%5ET%28I-H%29Y%7D%5C%5C%20%26%3D%20%5Cbf%7B%5Chat%7B%5Cbeta%7D%5ETX%5ET%28Y-HY%29%7D%5C%5C%20%26%3D%20%5Cbf%7B%5Chat%7B%5Cbeta%7D%5ETX%5ETY-%5Chat%7B%5Cbeta%7D%5ETX%5ETHY%7D%5C%5C%20%26%3D%20%5Cbf%7B%5Chat%7B%5Cbeta%7DX%5ETY-%5Chat%7B%5Cbeta%7D%5ETX%5ETX%28X%5ETX%29%5E%7B-1%7DX%5ETY%7D%5C%5C%20%26%3D%5Cbf%7B%5Chat%7B%5Cbeta%7DX%5ETY-%5Chat%7B%5Cbeta%7D%5ETX%5ETY%3D0%7D%20%5Cend%7Balign*%7D"/>
+   </p>
+
+<br/>
+
+4. <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Chat%7B%5Cbeta%7D"/> é um estimador não viesado para <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7B%5Cbeta%7D."/>
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20E%5Cbf%7B%5B%5Chat%5Cbeta%5D%7D%26%3D%20%5Cbf%7BE%5B%28X%5ETX%29%5E%7B-1%7DX%5ETY%5D%7D%5C%5C%20%26%3D%20%5Cbf%7B%28X%5ETX%29%5E%7B-1%7DX%5ETE%5BY%5D%7D%5C%5C%20%26%3D%20%5Cbf%7B%28X%5ETX%29%5E%7B-1%7DX%5ETX%5Cbeta%7D%3DI%5Cbeta%3D%5Cbeta%20%5Cend%7Balign*%7D"/>
+   </p>
+
+<br/>
+5. A matriz de covariâncias de <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Chat%7B%5Cbeta%7D"/> é <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Csigma%5E2%5Cmathbf%7B%28X%5ETX%29%5E%7B-1%7D%7D."/>
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20Var%5B%5Chat%7B%5Cbeta%7D%5D%3DVar%5B%5Cbf%7B%28X%5ETX%29%5E%7B-1%7DX%5ETY%7D%5D%20%26%3D%20%5Cbf%7B%28X%5ETX%29%5E%7B-1%7DX%7D%5C%5C%20Var%5BY%5D%5Cbf%7BX%28X%5ETX%29%5E%7B-1%7D%7D%26%3D%5Cbf%7BX%28X%5ETX%29%5E%7B-1%7DX%5ET%7D%5Csigma%5E2%5Cbf%7BX%28X%5ETX%29%5E%7B1%7D%7D%5C%5C%20%26%3D%5Csigma%5E2%5Cbf%7B%28X%5ETX%29%5E%7B-1%7DX%5ETX%28X%5ETX%29%5E%7B-1%7D%7D%5C%5C%20%26%3D%5Csigma%5E2%5Cbf%7B%28X%5ETX%29%5E%7B-1%7D%7D%20%5Cend%7Balign*%7D"/>
+   </p>
+
+<br/>
+
+6. <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7B%7B%5Chat%7B%5Cbeta%7D%7D%5Csim%20N_%7Bk&plus;1%7D%5B%5Cbf%7B%5Cbeta%3B%5Csigma%5E2%5Cbf%7B%28X%5ETX%29%5E%7B-1%7D%7D%7D%5D%7D"/> e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Chat%7B%5Cbeta%7D_j%5Csim%20N_p%28%5Cbeta_j%3Ba_%7Bij%7D%5C%20%5Csigma%5E2%29"/>, em que <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20a_%7Bij%7D"/> é o elemento ```jj``` da matriz <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7B%28X%5ETX%29%5E%7B-1%7D%7D."/>
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7B%28X%5ETX%29%5E%7B-1%7D%7D%3D%5Cleft%5B%20%5Cbegin%7Bmatrix%7D%20a_%7B00%7D%20%26%20a_%7B01%7D%20%26%20%5Ccdots%20%26%20a_%7B0k%7D%5C%5C%20a_%7B10%7D%20%26%20a_%7B11%7D%20%26%20%5Ccdots%20%26%20a_%7B1k%7D%5C%5C%20%5Cvdots%20%26%20%5Cvdots%20%26%20%5Cddots%20%26%20%5Cvdots%5C%5C%20a_%7Bk0%7D%20%26%20a_%7Bk1%7D%20%26%20%5Ccdots%20%26%20a_%7Bkk%7D%5C%5C%20%5Cend%7Bmatrix%7D%20%5Cright%5D"/>
+   </p>
+  
+  <br/>
+  
