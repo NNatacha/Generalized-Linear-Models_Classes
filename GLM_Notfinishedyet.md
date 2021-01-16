@@ -1581,3 +1581,113 @@ Seja <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20L%3DL
 Igualando as derivadas a zero:
 
 <br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cfrac%7B%5Cpartial%20L%7D%7B%5Cpartial%20%5Csigma%5E2%7D%3D0"/>
+   </p>
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20%5CRightarrow%5Cfrac%7B1%7D%7B2%5Chat%5Csigma_%7B0%7D%5E%7B2%7D%7D%5Cleft%28-%20n&plus;%5Cfrac%7B1%7D%7B%5Chat%5Csigma_%7B0%7D%5E%7B2%7D%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%7B%5Chat%5Cbeta_%7B0%7D%7D%29%5E%7BT%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%7B%5Chat%5Cbeta%7D_%7B0%7D%29%5Cright%29%5Ccdot%20L%28%5Chat%7B%5Cbeta_%7B0%7D%7D%2C%20%5Chat%5Csigma%5E%7B2%7D_%7B0%7D%3B%5Cmathbf%7By%7D%2C%5Cmathbf%7BX%7D%29%3D0%5C%5C%20%5CRightarrow-n&plus;%5Cfrac%7B1%7D%7B%5Chat%5Csigma%5E%7B2%7D_%7B0%7D%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%7B%5Chat%5Cbeta_%7B0%7D%7D%29%5E%7BT%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%7B%5Chat%5Cbeta%7D_%7B0%7D%29%3D0%5C%5C%20%5CRightarrow%5Cfrac%7B1%7D%7B%5Chat%5Csigma%5E%7B2%7D_%7B0%7D%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%7B%5Chat%5Cbeta_%7B0%7D%7D%29%5E%7BT%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%7B%5Chat%5Cbeta%7D_%7B0%7D%29%3Dn%5C%5C%20%5CRightarrow%20n%7B%5Chat%5Csigma%5E%7B2%7D_%7B0%7D%7D%3D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%7B%5Chat%5Cbeta_%7B0%7D%7D%29%5E%7BT%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%7B%5Chat%5Cbeta%7D_%7B0%7D%29%5C%5C%20%5CRightarrow%20%7B%5Chat%5Csigma%5E%7B2%7D_%7B0%7D%7D%3D%5Cfrac%7B1%7D%7Bn%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%7B%5Chat%5Cbeta_%7B0%7D%7D%29%5E%7BT%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%7B%5Chat%5Cbeta%7D_%7B0%7D%29%20%5Cend%7Balign*%7D"/>
+   </p>
+
+<br/>
+
+<img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%7B%5Chat%5Csigma%5E%7B2%7D_%7B0%7D%7D"/> sob <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%7BH_%7B0%7D%7D"/> e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Chat%5Cbeta_%7B0%7D"/> é o E.M.V. de <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbeta"/> sob <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20H_%7B0%7D."/>
+
+<br/>
+
+Temos ainda que,
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cfrac%7B%5Cpartial%20L%7D%7B%5Cpartial%20%5Cbeta%7D%3D0%5CRightarrow-%5Cfrac%7B1%7D%7B%5Chat%5Csigma%5E%7B2%7D_%7B0%7D%7D%28%5Cmathbf%7BX%7D%5E%7BT%7D%5Cmathbf%7BX%7D%5Chat%5Cbeta_%7B0%7D-%5Cmathbf%7BX%7D%5E%7BT%7D%5Cmathbf%7By%7D%29%5Ccdot%20L%28%5Chat%7B%5Cbeta_%7B0%7D%7D%2C%20%5Chat%5Csigma%5E%7B2%7D_%7B0%7D%3B%5Cmathbf%7By%7D%2C%5Cmathbf%7BX%7D%29-%7B%5Cmathbf%7BC%7D%5E%7BT%7D%5Chat%7Bn%7D_%7B0%7D%7D%3D0"/>
+   </p>
+   
+<br/>
+
+Dividindo ambos os lados da igualdade por  <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20L%28%5Chat%7B%5Cbeta_%7B0%7D%7D%2C%20%5Chat%5Csigma%5E%7B2%7D%3B%5Cmathbf%7By%7D%2C%5Cmathbf%7BX%7D%29"/>, obtemos:
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5CRightarrow-%5Cfrac%7B1%7D%7B%5Chat%5Csigma%5E%7B2%7D_%7B0%7D%7D%28%5Cmathbf%7BX%7D%5E%7BT%7D%5Cmathbf%7BX%7D%5Chat%5Cbeta_%7B0%7D-%5Cmathbf%7BX%7D%5E%7BT%7D%5Cmathbf%7By%7D%29-%5Cfrac%7B%5Cmathbf%7BC%7D%5E%7BT%7D%5Chat%7Bn%7D_%7B0%7D%7D%7BL%28%5Chat%7B%5Cbeta_%7B0%7D%7D%2C%20%5Chat%5Csigma%5E%7B2%7D_%7B0%7D%3B%5Cmathbf%7By%7D%2C%5Cmathbf%7BX%7D%29%7D%3D0"/>
+   </p>
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5CRightarrow-%28%5Cmathbf%7BX%7D%5E%7BT%7D%5Cmathbf%7BX%7D%5Chat%5Cbeta_%7B0%7D-%5Cmathbf%7BX%7D%5E%7BT%7D%5Cmathbf%7By%7D%29%3D%5Cfrac%7B%5Cmathbf%7B%5Csigma_%7B0%7D%5E2%20C%7D%5E%7BT%7D%5Chat%7Bn%7D_%7B0%7D%7D%7BL%28%5Chat%7B%5Cbeta_%7B0%7D%7D%2C%20%5Chat%5Csigma%5E%7B2%7D_%7B0%7D%3B%5Cmathbf%7By%7D%2C%5Cmathbf%7BX%7D%29%7D"/>
+   </p>
+
+<br/>
+
+Temos:
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7BX%5ETX%5Chat%7B%5Cbeta_0%7D-X%5ETy&plus;C%5ETn%5E*%7D"/>
+   </p>
+Sabendo que:
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7Bn%5E*%7D%3D%7B%5Cfrac%7B%5Chat%7B%5Csigma_0%7D%5E2%5Chat%7Bn_0%7D%7D%7BL%28%5Chat%7B%5Cbeta_%7B0%7D%7D%2C%20%5Chat%5Csigma%5E%7B2%7D_%7B0%7D%3B%5Cmathbf%7By%7D%2C%5Cmathbf%7BX%7D%29%7D%7D"/>
+   </p>
+
+<br/>
+
+Então:
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20%5CRightarrow%20%5Cbf%7BX%5ETX%5Chat%7B%5Cbeta_0%7D%7D%20%26%3D%20%5Cbf%7BX%5ETX-C%5ETn%5E*%7D%5Ccdot%20%5Cbf%7B%28X%5ETX%29%5E%7B-1%7D%7D%5C%5C%20%5CRightarrow%20%5Cbf%7B%5Chat%7B%5Cbeta_0%7D%7D%20%26%3D%20%5Cbf%7B%28X%5ETX%29%5E%7B-1%7D%5BX%5ETy-C%5ETn%5E*%5D%7D%5C%5C%20%26%3D%20%5Cbf%7B%28X%5ETX%29%5E%7B-1%7DX%5ETy-%28X%5ETX%29%5E%7B-1%7DC%5ETn%5E*%7D%5C%5C%20%26%3D%20%5Cbf%7B%5Chat%7B%5Cbeta%7D-%28X%5ETX%29%5E%7B-1%7DCn%5E*%7D%20%5Cend%7Balign*%7D"/>
+   </p>
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cfrac%7B%5Cpartial%20L%7D%7B%5Cpartial%20%5Cbf%20n%7D%3D0%5Crightarrow%20%7B%5Cbf%20C%7D%20%7B%5Cbf%20%7B%5Chat%20%5Cbeta%7D%7D%5E0%3D%20%5Cbf%20m"/>
+   </p>
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20%5Crightarrow%20%5Cbf%7BC%7D%5B%5Cbf%7B%5Chat%7B%5Cbeta%7D%7D-%28%5Cbf%7BX%5ETX%7D%29%5E%7B-1%7DC%5ET%20n%5E*%5D%26%3Dm%5C%5C%20%5Crightarrow%20%7B%5Cbf%20C%7D%20%7B%5Cbf%20%5Chat%7B%5Cbeta%7D%7D-%20%7B%5Cbf%20C%7D%28%7B%5Cbf%20X%7D%5ET%20%7B%5Cbf%20X%29%7D%5E%7B-1%7D%20%7B%5Cbf%20C%7D%5ET%20%7B%5Cbf%20n%7D%5E*%20%26%3D%20%7B%5Cbf%20m%7D%20%5Cend%7Balign*%7D"/>
+   </p>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Crightarrow%20%7B%5Cbf%20C%7D%28%7B%5Cbf%20X%7D%5ET%20%7B%5Cbf%20X%7D%29%5E%7B-1%7D%7B%5Cbf%20C%7D%5ET%20%7B%5Cbf%20n%7D%5E*%3D%20%7B%5Cbf%20C%7D%20%7B%5Cbf%20%5Chat%7B%5Cbeta%7D%7D-%20%7B%5Cbf%20m%7D"/>
+   </p>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20%5B%7B%5Cbf%20C%7D%28%7B%5Cbf%20X%7D%5ET%20%7B%5Cbf%20X%7D%29%5E%7B-1%7D%20%7B%5Cbf%20C%7D%5ET%5D%5E%7B-1%7D%20%7B%5Cbf%20C%7D%28%20%7B%5Cbf%20X%7D%5ET%20%7B%5Cbf%20X%7D%29%5E%7B-1%7D%7B%5Cbf%7BC%5ET%7D%7D%20%7B%5Cbf%20n%7D%5E*%3D%5B%7B%5Cbf%20C%7D%28%7B%5Cbf%20X%7D%5ET%20%7B%5Cbf%20X%7D%29%5E%7B-1%7D%20%7B%5Cbf%20C%7D%5ET%5D%5E%7B-1%7D%5B%20%7B%5Cbf%20C%7D%20%5Cbf%7B%5Chat%7B%5Cbeta%7D%7D-%20%5Cmathbf%20m%5D%5C%5C%20%7B%5Cbf%20%5Chat%7Bn%7D%7D%5E*%3D%5B%20%7B%5Cbf%20C%7D%28%7B%5Cbf%20X%7D%5ET%20%7B%5Cbf%20X%7D%29%5E%7B-1%7D%20%7B%5Cbf%20C%7D%5ET%5D%5E%7B-1%7D%5B%7B%5Cbf%20C%7D%7B%5Chat%7B%5Cbeta%7D%7D-%7B%20%5Cbf%20m%7D%5D%20%5Cend%7Balign*%7D"/>
+   </p>
+
+<br/>
+
+Substituindo ${\bf \hat{n}}^*$ em $(1)$, obtemos:
+
+<br/>
+
+$${\bf \hat {\beta^0}}={\bf \hat{\beta}}-({\bf X}^T {\bf X})^{-1}[{\bf C}({\bf X}^T {\bf X})^{-1} {\bf C}^T]^{-1}[{\bf C} {\bf \hat{\beta}}-{\bf m}]$$
+<br/>
+
+\ Finalmente, o ${\overset{maXL(\mathbf{\beta},\sigma^{2};\mathbf{y},\mathbf{X})}{\scriptsize{\mathbf\Theta\in \Theta}}}$ é
+
+<br/>
+
+\begin{eqnarray}
+L(\hat \beta^0,\sigma^2;{\bf y}, {\bf X})&=& \left(\frac{1}{2{\pi}{\hat{\sigma_0}^2}}\right)^{\frac{n}{2}}\exp\left\{-\frac{1}{2\hat{\sigma_0}^2}(\mathbf{y}-\mathbf{X}\mathbf{\hat{\beta^0}})^{T}(\mathbf{y}-\mathbf{X}\mathbf{\hat{\beta^0}})\right\}\\
+&=&\left(\frac{1}{2{\pi}{\hat{\sigma_0}^2}}\right)^{\frac{n}{2}}\exp\left\{-\frac{n}{2\hat{\sigma_0}^2}\mathbf{\hat{\sigma_0^2}}\right\}\\
+&=&\left(\frac{1}{2\pi \hat \sigma^2_0}\right)^\frac{n}{2} exp\left(-\frac{n}{2}\right)
+\end{eqnarray}
+
+<br/>
+
+\ Vamos obter, agora, a estatística de teste da R.V.G:
+
+<br/>
