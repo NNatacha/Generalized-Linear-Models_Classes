@@ -1224,3 +1224,112 @@ Como,
   
   <br/>
   
+**_OBS_**: <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbeta_i"/> e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbeta_j"/> são independentes <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5CLeftrightarrow%20a_%7Bij%7D%3D0%5C%20%5Cforall%5C%20i%5Cneq%20j."/>
+
+<br/>
+
+#### **Decomposição das somas de quadrados**
+
+<br/>
+
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20SQT%3D%20%5Csum%5Climits_%7Bi%3D1%7D%5En%28Y_i-%5Cbar%7BY%7D%29%3D%5Csum%5Climits_%7Bi%3D1%7D%5EnY_i%5E2-n%5Cbar%7BY%7D%5E2%5Cquad%5Cquad%5Cmbox%7B%281%29%7D%5C%5C%20%5Csum%5Climits_%7Bi%3D1%7D%5EnY_i%5E2%3D%20%5Cbf%7BY%5ETY%7D%3DY%5ETIY%3DY%5ET%28I&plus;H-H%29Y"/>
+   </p>
+<br/>
+Onde,
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7BH%3DX%28X%5ETX%29%5E%7B-1%7DX%5ET%7D%3D%20%5Cbf%7BY%5ET%5B%28I-H%29&plus;H%5DY%7D%3D%20%5Cbf%7BY%5ET%28I-H%29Y&plus;Y%5ETHY%7D"/>
+   </p>
+
+<br/>
+
+Como <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BH%7D"/> e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7B%28I-H%29%7D"> são simétricas e idempotentes, temos:
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20%5Cbf%7BY%5ETY%7D%20%26%3D%20%5Cbf%7BY%5ET%28I-H%29%28I-H%29Y&plus;Y%5ETHHY%7D%5C%5C%20%26%3D%20%5Cbf%7BY%5ET%28I-H%29%5ET%28I-H%29Y&plus;Y%5ETH%5ETHY%7D%5C%5C%20%26%3D%20%5Cbf%7B%5BY%28I-H%29%5D%5ET%5B%28I-H%29Y%5D&plus;%5BYH%5D%5ET%5BHY%5D%7D%20%5Cend%7Balign*%7D"/>
+   </p>
+<br/>
+
+Daí, 
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7BY%5ETY%3Dr%5ETr&plus;%5Chat%7Bu%7D%5ET%5Chat%7Bu%7D%7D%5Cquad%5Cquad%5Cquad%5Cquad%5Cmbox%7B%282%29%7D"/>
+   </p>
+<br/>
+
+Observe que,
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7B%5Chat%7Bu%7D%5ET%5Chat%7Bu%7D%3DY%5ETHHY%3DY%5ETHY%3DY%5ETX%28X%5ETX%29%5E%7B-1%7DX%5ETY%3DY%5ETX%5Chat%7B%5Cbeta%7D%7D%5Cquad%5Cquad%5Cquad%5Cquad%5Cmbox%7B%283%29%7D"/>
+   </p>
+          
+<br/>
+
+De ```(2)``` e ```(3)```, segue que:
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7BY%5ETY%3Dr%5ETr&plus;Y%5ETX%5Chat%7B%5Cbeta%7D%7D"/>
+   </p>
+
+<br/>
+
+Desta forma,
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20SQT%3D%5Csum%5Climits_%7Bi%3D1%7D%5EnY_i%5E2-n%5Cbar%7BY%7D%5E2%3D%5Cmathbf%7BY%5ETY-n%5Cbar%7BY%7D%5E2%3Dr%5ETr&plus;Y%5ETX%5Chat%7B%5Cbeta%7D-n%5Cbar%7BY%7D%5E2%7D"/>
+   </p>
+
+<br/>
+
+Observemos que:
+
+<br/>
+
+*i)* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20SQT%3D%5Cmathbf%7BY%5ETY-n%5Cbar%7BY%7D%5E2%3DY%5ETY-%5Cfrac%7B1%7D%7Bn%7DY%5ET11%5ETY%3DY%5ET%5Cleft%5BI-%5Cfrac%7B1%7D%7Bn%7D11%5ET%5Cright%5DY%3DY%5ET%5Cleft%5BI-%5Cfrac%7B1%7D%7Bn%7DJ_n%5Cright%5DY%7D"/>
+
+<br/>
+
+Em que <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20J_n%3D%5Cmathbf%7B11%5ET%7D%3B"/>
+
+<br/>
+
+*ii)* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20SQReg%3D%5Cmathbf%7BY%5ETX%5Chat%7B%5Cbeta%7D-n%5Cbar%7BY%7D%5E2%3DY%5ETHY-%5Cfrac%7B1%7D%7Bn%7DY%5ETJ_nY%3DY%5ET%5BH-%5Cfrac%7B1%7D%7Bn%7DJ_n%5DY%7D%3B"/>
+
+<br/>
+
+*iii)* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20SQRes%3D%5Cmathbf%7Br%5ETr%3DY%5ET%28I-H%29Y%7D."/>
+
+<br/>
+**RESUMO:**
+
+<br/>
+
+<img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20SQT%3D%5Cmathbf%7BY%5ETY-n%5Cbar%7BY%7D%5E2%7D%3B"/>
+<br/>
+
+<img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20SQReg%3D%5Cmathbf%7BY%5ETY%5Chat%7B%5Cbeta%7D-n%5Cbar%7BY%7D%5E2%7D%3B"/>
+<br/>
+
+<img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20SQRes%3D%5Cmathbf%7Br%5ETr%7D"/>
+
+<br/>
+
+**Resultado 01:** Se <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BA%7D"/> é uma matriz <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20n%5Ctimes%20m"/> e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BA%5E2%3DmA%7D"/>, <br/>
+
+Então: <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20Tr%28%5Cbf%7BA%7D%29%3Dmr%28A%29"/>
+
+<br/>
+
+Se <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7BA%7D"/> é idempotente, <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20m%3D1"/> e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20Tr%28%5Cmathbf%7BA%7D%29%3Dr%28%5Cmathbf%7BA%7D%29."/>
+
+<br/>
