@@ -1060,7 +1060,59 @@ _OBS_: <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5C
 
 <br/>
 
-i. $\bf{H=H^T}$ (H é simetrica).
+i. <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7BH%3DH%5ET%7D"/> (<img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BH%7D"/> é simetrica).
 <br/>
 
-\ De fato,
+De fato,
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7B%5BX%28X%5ET%20X%29%5E%7B-1%7D%20X%5D%5ET%20%3DX%28X%5ETX%29%5E%7B-1%7DX%3DH%7D"/>
+   </p>
+
+<br/>
+
+ii. <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7B%20H%5ETH%7D%3D%20H"/> (<img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BH%7D"/> é idempotente).
+
+<br/>
+
+De fato,
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20%5Cbf%7BHH%7D%26%3D%20%5Cbf%7B%7B%5BX%28X%5ETX%29%5E%7B-1%7DX%5ET%5D%7D%7B%5BX%28X%5ETX%29%5E%7B-1%7DX%5ET%5D%7D%7D%5C%5C%20%26%3D%20%5Cbf%7BX%28X%5ETX%29%5E%7B-1%7DX%5ETX%28X%5ETX%29%5E%7B-1%7DX%5ET%7D%5C%5C%20%26%3D%20%5Cbf%7BX%28X%5ETX%29%5E%7B-1%7DX%5ET%3DH%7D%20%5Cend%7Balign*%7D"/>
+   </p>
+
+<br/>
+
+#### Residuos e Propriedades
+<br/>
+  
+O resíduo ordinário associado à ```i-ésima``` observação é dado por
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Chat%7B%5Cepsilon_i%7D%3D%20Y_i-%5Chat%7BY%7D%3D%5Chat%7BY%7D-%5Chat%7B%5Cmu_i%7D"/>
+   </p>
+<br/>
+
+A partir de agora, chamaremos este resíduo por <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20r_i"/>. Consideremos:
+<br/>
+
+  <p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20r%3D%28r_1%2C...r_n%29%5ET"/>
+   </p>
+  <br/>
+  
+Daí, segue que:
+<br/>
+
+  <p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7Br%3DY-X%5Chat%7B%5Cbeta%7D%3DY-%5Chat%7B%5Cmu%7D%3DY-HY%3D%28I-H%29Y%7D"/>
+   </p>
+  
+<br/>
+  
+**Propriedades:**
+
+  <br/>
