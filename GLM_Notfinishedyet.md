@@ -61,7 +61,7 @@ Apostilas correspondentes à disciplina "<span style="color: blue">**Modelos Lin
 <br/>
 <br/>
 
-#### **Modelos de Regressão**
+## **Modelos de Regressão**
 
 <br/>
 
@@ -604,7 +604,7 @@ que é o estimador de _MQO_ de <img src="https://latex.codecogs.com/gif.latex?%5
 
 <br/>
 
-#### Análise da Variância
+## Análise da Variância
 
 <br/>
 Decomposição das Somas de Quadrados.
@@ -817,3 +817,156 @@ Tomamos uma amostra de ```n=5``` observações: <img src="https://latex.codecogs
 Com base na amostra, podemos fazer inferências. Por exemplo, se ```x=8``` podemos estimar a média do valor do aluguel sem precisar 
 <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20F_y%288%29%2C%20%5Cquad%5Cmbox%7Bpois%7D%5Cquad%5Cmbox%20x%3D8%20%5Cin%20D"/>.
 <br/>
+
+Podemos fazer <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20E%5B%5Chat%7By%7D%7Cx%3D8%5D%3D%5Chat%7B%5Cbeta_0%7D%20&plus;%20%5Chat%7B%5Cbeta_1%7D%5Ccdot8"/>, em que <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Chat%7B%5Cbeta_0%7D"/> e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Chat%7B%5Cbeta_%7B1%7D%7D"/> são os estimadores de M.Q.O.'s de <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbeta_0"/> e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbeta_1"/>, respectivamente.
+
+<br/>
+
+## Formas Quadráticas
+
+<br/>
+
+**Definição:** a função <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20f%28x_1%2C...%2Cx_n%29"/> de ```n``` variáveis reais <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20x_%7B1%7D%2C...%2Cx_%7Bn%7D"/> é uma forma quadrática se, a função 
+<img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20f%28x_%7B1%7D%2C...%2Cx_%7Bn%7D%29%3D%5Csum%5Climits_%7Bi%3D1%7D%5En%5Csum%5Climits_%7Bj%3D1%7D%5Eka_%7Bij%7Dx_%7Bi%7Dx_%7Bj%7D%3D%5Cmathbf%7BX%5ETAX%7D."/>
+
+<br/>
+
+Com <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BX%7D%3D%28x_%7B1%7D%2C...%2Cx_%7Bn%7D%29%5ET"/> e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BA%7D%3Da_%7Bij%7D"/>, onde esta é a matriz simétrica <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%28n%5Ctimes%20n%29"/> associada à forma quadrática.
+
+<br/>
+
+**-> Forma quadrática mais simples**: <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20f%28x%29%3Da_%7B11%7Dx%5E2_%7B1%7D"/>.
+<br/>
+
+Formas quadráticas em que <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20x_%7B1%7D%2C...%2Cx_%7Bn%7D"/> são v.a.'s de extrema importância estatística.  
+<br/>
+
+*Exemplo*: <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Csum_%7Bi%3D1%7D%5En%28x_i-%5Cbar%7Bx%7D%29%5E2%3D%5Csum_%7Bi%3D1%7D%5Enx%5E2_%7Bi%7D-n%5Cbar%7Bx%7D%5E2"/>.
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20*%20%5Csum%5Climits_%7Bi%3D1%7D%5Enx%5E2_%7Bi%7D%3D%5Cmathbf%7BX%5ETX%7D"/>
+   </p>
+   
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20*%20n%5Cbar%7Bx%7D%5E2%3D%20n%5Cleft%28%5Cfrac%7B1%7D%7Bn%7D%5Csum%5En_%7Bi%3D1%7Dx_%7Bi%7D%5Cright%29%5E2%3D%20%5Cfrac%7B1%7D%7Bn%7D%5Cleft%28%5Csum%5En_%7Bi%3D1%7Dx_%7Bi%7D%5Cright%29%5E2%3D%5Cfrac%7B1%7D%7Bn%7D%5B%5Cmathbf%7BX%5ET11X%7D%5D"/>
+   </p>
+   
+<br/>
+
+Portanto,
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Csum%5Climits_%7Bi%3D1%7D%5En%28x_%7Bi%7D-%5Cbar%7Bx%7D%29%5E2%3D%5Cmathbf%7BX%5ETX%7D-%5Cfrac%7B1%7D%7Bn%7D%28%5Cmathbf%7BX%5ET11X%7D%29%3D%20%5Cmathbf%7BX%5ET%5Cleft%28I-%5Cfrac%7B1%7D%7Bn%7D11%5ET%5Cright%29X%7D%3D%5Cmathbf%7BX%5ETAX%7D."/>
+   </p>
+
+<br/>
+
+**Classificação das Formas Quadráticas**  
+
+<br/>
+
+1. <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BX%5ET%7D%5Ctextbf%7BAX%7D"/> é positiva definida se <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BX%5ET%7D%5Ctextbf%7BAX%7D%3E0%24%2C%24%5Cforall%24%20%24%5Cmathbf%7BX%7D%5Cneq0"/>.
+
+<br/>
+
+2. <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BX%5ETAX%7D"/> é positiva semidefinida se <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BX%5ETAX%7D%5Cgeq0"/> e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BX%5ETAX%7D%3D0"/> para, pelo menos, um <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20X%5Cneq0"/>.
+
+<br/>
+
+3. <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BX%5ETAX%7D"/> é dita ser não negativa definida se for positiva definida ou positiva semidefinida.
+<br/>
+
+4. <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BX%5ETAX%7D"/> é negativa definida se <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BX%5ETAX%7D"/> é positiva definida. <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BX%5ETAX%7D"/> é dita ser negativa se <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BX%5ETAX%7D"/> é positiva semidefinida.
+
+<br/>
+
+## Derivada de Formas Lineares e Quadráticas  
+
+<br/>
+
+**Definição:** Sejam <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BX%7D%3D%28x_%7B1%7D%2C...%2Cx_%7Bn%7D%29%5ET"/> e ```f(x)``` uma função real de <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20x_%7B1%7D%2C...%2Cx_%7Bn%7D"/>. A derivada de ```f(.)``` com relação a <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20f%28%5Cmathbf%7BX%7D%29"/> é
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7B%5Cfrac%7B%5Cpartial%7Bf%28x%29%7D%7D%7B%5Cpartial%7BX%7D%7D%7D%3D%5Cleft%5B%5Cbegin%7Barray%7D%20%7Bccc%7D%20%5Cfrac%7B%5Cpartial%7Bf%28x%29%7D%7D%7B%5Cpartial%7BX_%7B1%7D%7D%7D%20%5C%5C%20%5Cfrac%7B%5Cpartial%7Bf%28x%29%7D%7D%7B%5Cpartial%7BX_%7B2%7D%7D%7D%20%5C%5C%20%5Cvdots%5C%5C%20%5Cfrac%7B%5Cpartial%7Bf%28x%29%7D%7D%7B%5Cpartial%7BX_%7Bn%7D%7D%7D%20%5Cend%7Barray%7D%5Cright%5D%2C%20%5Cquad%5Cmbox%7Bem%20que%7D%20%5C%20f%3A%20%5Cmathbb%7BR%7D%5En%5Crightarrow%5Cmathbb%7BR%7D%5Cquad"/>
+   </p>
+
+<br/>
+
+**Teorema 1**: Se <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7Ba%7D%24%3D%24%28a_%7B1%7D%2C...%2Ca_%7Bn%7D%29%5ET"/> é um vetor de constantes e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20f%28x%29%3D%5Cmathbf%7Ba%7D%5ET%5Ctextbf%7BX%7D%3D%5Cmathbf%7BX%7D%5ET%5Ctextbf%7Ba%7D"/> (função linear), 
+<br/>
+
+Então,
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cfrac%7B%5Cpartial%20f%28x%29%7D%7B%5Cpartial%20X%7D%3D%5Ctextbf%7Ba%7D"/>
+   </p>
+<br/>
+
+**Teorema 2**: Se <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20f%28X%29%3D%5Cmathbf%7BX%5ETAX%7D"/> e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Ctextbf%7BA%7D"/> é a matriz de constantes, então:
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cfrac%7B%5Cpartial%20f%28x%29%7D%7B%5Cpartial%20X%7D%3D%5Ctextbf%7BX%7D%3D%202%5Ctextbf%7BAX%7D"/>
+   </p>
+<br/>
+
+#### Esperança de um vetor aleatório
+
+<br/>
+
+Se <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cmathbf%7BY%7D"/> é um vetor aleatório <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%28n%5Ctimes1%29"/>, onde <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cmathbf%7BY%7D%3D%28Y_1%2C...%2CY_n%29%5ET"/>, então
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20E%5BY%5D%3D%5BE%28Y_1%29%2C...%2CE%28Y_n%29%5D%5ET"/>
+   </p>
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BVar%5B%5Cmathbf%7BY%7D%5D%7D%3D%20%5Cleft%5B%5Cbegin%7Bmatrix%7D%20Var%5BY_%7B1%7D%5D%20%26%20Cov%5BY_%7B1%7D%2CY_%7B2%7D%5D%20%26%20...%20%26%20Cov%5BY_%7B1%7D%2CY_%7Bn%7D%5D%5C%5C%20Cov%5BY_%7B2%7D%2CY_%7B1%7D%5D%20%26%20Var%5BY_%7B2%7D%5D%20%26%20...%20%26%20Cov%5BY_%7B2%7D%2CY_%7Bn%7D%5D%5C%5C%20%5Cvdots%20%26%20%5Cvdots%20%26%20%5Cddots%20%26%20%5Cvdots%5C%5C%20Cov%5BY_%7Bn%7D%2CY_%7B1%7D%5D%20%26%20Cov%5BY_%7Bn%7D%2CY_%7B2%7D%5D%20%26%20...%20%26Var%5BY_%7Bn%7D%5D%20%5Cend%7Bmatrix%7D%5Cright%5D"/>
+   </p>
+<br/>
+
+Como a <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20COV%28Y_i%2CY_j%29%3DCOV%28Y_j%2CY_i%29"/>, então <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BVar%28Y%29%7D"> é uma matriz simétrica.
+
+<br/>
+
+**Propriedades:**
+<br/>
+
+Sejam <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BA%7D"/> uma matriz de constantes, <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BY%7D"/> um vetor aleatório e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BW%3DAY%7D."/>
+<br/>
+
+*i)* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20E%5B%5Cmathbf%7BA%7D%5D%3D%5Cmathbf%7BA%7D"/>
+<br/>
+
+*ii)* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20E%5B%5Cmathbf%7BW%7D%5D%3D%20E%5B%5Cmathbf%7BAY%7D%5D%3D%5Cmathbf%7BAE%5BY%5D%7D"/>
+<br/>
+
+*iii)* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20VAR%5B%5Cmathbf%7BW%7D%5D%3D%20VAR%5B%5Cmathbf%7BAY%7D%5D%3D%5Cmathbf%7BA%7DVAR%5B%5Cmathbf%7BY%5DA%5ET%7D"/>
+
+<br/>
+
+## Modelo linear geral (Inferência)
+
+<br/>
+
+Considerar:
+
+<br/>
+
+<img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BY%3DX%5Cbeta%20&plus;%20%5Cepsilon%7D"/>, com <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7B%5Cepsilon%7D%20%5Csim%20N_n%28%5Cmathbf%7B0%7D%3B%5Csigma%5E2%5Cmathbf%7BI_n%7D%29"/>, onde <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Csigma%5E2"/> é desconhecido.
+<br/>
+
+<img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20r%28%5Cmathbf%7BX%7D%29%3Dk&plus;1"/> (Posto completo)
+<br/>
+
+Daí,
+
+<br/>
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BY%7D%20%5Csim%20N_n%28%5Cmathbf%7BX%5Cbeta%7D%2C%5Csigma%5E2%5Cmathbf%7BI_n%7D%29"/>
+   </p>
+<br/>
+
+Suposições:
