@@ -937,13 +937,13 @@ Como a <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20COV
 Sejam <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BA%7D"/> uma matriz de constantes, <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BY%7D"/> um vetor aleatório e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BW%3DAY%7D."/>
 <br/>
 
-*i)* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20E%5B%5Cmathbf%7BA%7D%5D%3D%5Cmathbf%7BA%7D"/>
+*i)* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20E%5B%5Cmathbf%7BA%7D%5D%3D%5Cmathbf%7BA%7D"/>;
 <br/>
 
-*ii)* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20E%5B%5Cmathbf%7BW%7D%5D%3D%20E%5B%5Cmathbf%7BAY%7D%5D%3D%5Cmathbf%7BAE%5BY%5D%7D"/>
+*ii)* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20E%5B%5Cmathbf%7BW%7D%5D%3D%20E%5B%5Cmathbf%7BAY%7D%5D%3D%5Cmathbf%7BAE%5BY%5D%7D"/>;
 <br/>
 
-*iii)* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20VAR%5B%5Cmathbf%7BW%7D%5D%3D%20VAR%5B%5Cmathbf%7BAY%7D%5D%3D%5Cmathbf%7BA%7DVAR%5B%5Cmathbf%7BY%5DA%5ET%7D"/>
+*iii)* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20VAR%5B%5Cmathbf%7BW%7D%5D%3D%20VAR%5B%5Cmathbf%7BAY%7D%5D%3D%5Cmathbf%7BA%7DVAR%5B%5Cmathbf%7BY%5DA%5ET%7D"/>.
 
 <br/>
 
@@ -995,4 +995,26 @@ Suponha que <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%
 <br/>
 
 A função de verossimilhança é dada por:
+<br/>
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20L%5Cbf%7B%28%5Cbeta%2C%5Csigma%5E2%2CY%2CX%29%7D%26%3D%5Cfrac%7B1%7D%7B%282%5Cpi%29%5E%5Cfrac%7Bn%7D%7B2%7D%28%5Csigma%5E2%29%5E%5Cfrac%7Bn%7D%7B2%7D%7D%20exp%5Cleft%5C%7B-%5Cfrac%7B1%7D%20%7B2%5Csigma%5E2%7D%20%5Cbf%7B%28Y-X%20%5Cbeta%29%5Et%28Y-X%20%5Cbeta%29%7D%5Cright%5C%7D%5C%5C%20%26%3D%20%7B%5Cleft%20%28%5Cfrac%7B1%7D%7B2%5Cpi%20%5Csigma%5E2%7D%5Cright%29%5E%5Cfrac%20n2%7Dexp%5Cleft%5C%7B-%5Cfrac%7B1%7D%20%7B2%5Csigma%5E2%7D%20%5Cbf%7B%28Y-X%20%5Cbeta%29%5Et%28Y-X%20%5Cbeta%29%7D%5Cright%5C%7D%20%5Cend%7Balign*%7D"/>
+   </p>
+ 
+<br/>
+
+O logaritimo da função de verossimilhança fica dado por:
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20ln%5BL%28%5Cbeta%2C%5Csigma%5E2%2CY%2CX%29%5D%3D%5Cfrac%7Bn%7D%7B2%7D%20ln%20%5B2%5Cpi%20%5Csigma%5E2%5D-%20%5Cfrac%7B1%7D%7B2%5Csigma%5E2%7D%5Cbf%7B%28Y-X%20%5Cbeta%29%5ET%20%28Y-X%20%5Cbeta%29%7D"/>
+   </p>
+<br/>
+
+Espaço paramétrico: <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7B%5CTheta%3D%5C%7B%28%5Cmathbf%7B%5Cbeta%7D%2C%5Csigma%5E2%29%3A%5Csigma%5E2%3E0%2C%20-%5Cinfty%5Cle%5Cmathbf%7B%5Cbeta%7D%5Cle%5Cinfty%5C%7D%7D"/>
+
+<br/>
+
+Encontrando as estimadores de Máxima Verossimilhança para <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7B%5Cbeta%7D"/> e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Csigma%5E2"/>.
+
 <br/>
