@@ -1115,4 +1115,73 @@ Daí, segue que:
   
 **Propriedades:**
 
+ <br/>
+ 
+1. <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Csum%5Climits_%7Bi%3D1%7D%5E%7Bn%7Dr_i%3D0%5CRightarrow%5Csum_%7Bi%3D1%7D%5E%7Bn%7Dr_i%3D%7B1%5ETr%3D1%5ET%28I-H%29Y%7D%3D%281%5ET-1%5ETH%29Y"/>
   <br/>
+  
+Agora, defina:
+  <br/>
+  
+  
+  <p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7BX%7D%3D%20%5Cleft%5B%20%5Cbegin%7Barray%7D%7Bcccc%7D%201%20%26%20x_%7B11%7D%20%26%20%5Ccdots%20%26%20x_%7Bk1%7D%5C%5C%201%20%26%20x_%7B12%7D%20%26%20%5Ccdots%20%26%20x_%7Bk2%7D%5C%5C%20%5Cvdots%20%26%20%5Cvdots%20%26%20%5Cddots%20%26%20%5Cvdots%5C%5C%201%20%26%20x_%7B1n%7D%20%26%20%5Ccdots%20%26%20x_%7Bkn%7D%5C%5C%20%5Cend%7Barray%7D%20%5Cright%5D%20%3D%20%5B1%2CX_1%5D%2C%5Cquad%5Cmbox%7Bem%20que%7D"/>
+   </p>
+  
+  <br/>
+  
+  <p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7B%7BX_1%7D%3D%20%5Cleft%5B%20%5Cbegin%7Bmatrix%7D%20x_%7B11%7D%20%26%20%5Ccdots%20%26%20x_%7Bk1%7D%5C%5C%20x_%7B12%7D%20%26%20%5Ccdots%20%26%20x_%7Bk2%7D%5C%5C%20%5Cvdots%20%26%20%5Cddots%20%26%20%5Cvdots%5C%5C%20x_%7B1n%7D%20%26%20%5Ccdots%20%26%20x_%7Bkn%7D%5C%5C%20%5Cend%7Bmatrix%7D%20%5Cright%5D.%20%5Cquad%5Cmbox%7BNeste%20caso%2C%7D%7D"/>
+   </p>
+  
+  <br/>
+  
+  <p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20%5Cbf%7BX%5ET%7D%3D%20%5Cleft%5B%20%5Cbegin%7Barray%7D%7Bc%7D%20%5Cbf%7B1%5ET%7D%5C%5C%20%5Cbf%7BX_%7B1%7D%7B%5ET%7D%7D%5C%5C%20%5Cend%7Barray%7D%20%5Cright%5D%3B%20%5Cbf%7BX%5ET%20H%20%3D%20X%5ET%20X%20%28X%5ET%20X%29%5E%7B-1%7D%20X%5ET%7D%20%26%3D%20%5Cleft%5B%20%5Cbegin%7Barray%7D%7Bc%7D%20%5Cbf%7B1%5ET%7D%5C%5C%20%5Cbf%7BX_%7B1%7D%7B%5ET%7D%7D%5C%5C%20%5Cend%7Barray%7D%20%5Cright%5D%5Cbf%7BX%20%28X%5ET%20X%29%5E%7B-1%7D%20X%5ET%7D%20%5C%5C%20%26%3D%5Cleft%5B%20%5Cbegin%7Barray%7D%7Bc%7D%20%5Cbf%7B1%5ETX%28X%5ETX%29%5E%7B-1%7DX%5ET%7D%5C%5C%20%5Cbf%7BX_1%5ETX%28X%5ETX%29%5E%7B-1%7DX%5ET%7D%5C%5C%20%5Cend%7Barray%7D%20%5Cright%5D%20%5Cend%7Balign*%7D"/>
+   </p>
+  
+  <br/>
+  
+ Como,
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7BX%5ETH%7D%3DX%5ETX%28X%5ETX%29%5E%7B-1%7DX%5ET%3DX%5Et%3D%20%5Cleft%5B%20%5Cbegin%7Barray%7D%7Bc%7D%20%5Cbf%7B1%5ET%7D%5C%5C%20%5Cbf%7BX_%7B1%7D%7B%5ET%7D%7D%5C%5C%20%5Cend%7Barray%7D%20%5Cright%5D%5Cquad%5Cquad%5Cquad%5Cquad%5Cquad%5Cquad%5Cmbox%7B%5Cbf%7B%281%29%7D%7D"/>
+   </p>
+
+<br/>
+
+Então, por **```(1)```**, temos que
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7BX%5ETH%7D%3D%5Cleft%5B%20%5Cbegin%7Barray%7D%7Bc%7D%20%5Cbf1%5ETX%28X%5ETX%29%5E%7B-1%7DX%5ET%5C%5C%20%5Cbf%7BX_1%5ET%28X%5ETX%29%5E%7B-1%7DX%5ET%7D%20%5Cend%7Barray%7D%20%5Cright%5D%3D%20%5Cleft%5B%20%5Cbegin%7Barray%7D%7Bc%7D%20%5Cbf%7B1%5ET%7D%5C%5C%20%5Cbf%7BX_1%5ET%7D%20%5Cend%7Barray%7D%20%5Cright%5D"/>
+   </p>
+
+<br/>
+
+Isto implica que,
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7B1%5ETX%28X%5ETX%29%5E%7B-1%7DX%5ET%3D1%5ET%7D%5CRightarrow%5C%201%5ETH%3D1%5ET"/>
+   </p>
+
+<br/>
+
+Como,
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7B1%5ETH%3D1%5ET%7D%5Cmbox%7B%2C%20segue%20que%3A%7D%20%5Csum%5Climits_%7Bi%3D1%7D%5Enr_i%3D%5Cbf%281%5ET-1%5ETH%29Y%3D%281%5ET-1%5ET%29Y%3D0Y%3D0"/>
+   </p>
+
+<br/>
+
+2. <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BX%5ETr%7D%3De"/>
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20%5Cbf%7BX%5ETr%7D%3D%20%5Cbf%7BX%5ET%28I-H%29Y%7D%20%26%3D%20%5Cbf%7BX%5ET%28Y-HY%29%3DX%5ETY-X%5ETHY%7D%5C%5C%20%26%3D%20%5Cbf%7BX%5ETY-X%5ETX%28X%5ETX%29%5E%7B-1%7DX%5ETY%7D%5C%5C%20%26%3D%20%5Cbf%7BX%5ETY-X%5ETY%3D0%7D%20%5Cend%7Balign*%7D"/>
+   </p>
+
+<br/>
