@@ -10,17 +10,16 @@
 
 <br/>
 <br/>
-<div align="right">
+<p align="right">
    <br/>
  Turma_2017.1<br/>
   
-   <br/>
-  
+   <br/>  
   Universidade Estadual da Paraíba<br/>
   
-  http://departamentos.uepb.edu.br/estatistica/corpo-docente/ <br/>
-  
-</div> 
+  <br/>
+  http://departamentos.uepb.edu.br/estatistica/corpo-docente/ <br/>  
+</p> 
 
 <br/>
 <br/>
@@ -769,4 +768,24 @@ Sendo,
 <br/>
 
 Em que:  
+<br/>
+
+- **```Y```** é um vetor aleatório <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%28n%5Ctimes%201%29"/>; 
+<br/>
+
+- **```X```** é a matriz <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%7Bn%5Ctimes%28k&plus;1%29%7D"/> de valores observáveis;  
+<br/>
+
+- <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cmathbf%7B%5Cbeta%7D"/> é um vetor <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5B%28k&plus;1%29%5Ctimes%201%5D"/> de parâmetros desconhecidos definidos e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5COmega_%5Cmathbf%7B%5Cbeta%7D"/>; 
+<br/>
+
+- <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7B%5Cepsilon%7D"/> é um vetor aleatório tal que <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20E%5B%5Cepsilon%5D%3D0"/> e,
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BVar%5B%5Cepsilon%5D%3D%5CSigma%7D%20%3D%20%5Cleft%5B%5Cbegin%7Bmatrix%7D%20%7Bccc%7D%20Var%5B%5Cvarepsilon_%7B1%7D%5D%20%26%20Cov%5B%5Cvarepsilon_%7B1%7D%2C%5Cvarepsilon_%7B2%7D%5D%20%26%20...%20%26%20Cov%5B%5Cvarepsilon_%7B1%7D%2C%5Cvarepsilon_%7Bn%7D%5D%5C%5C%20Cov%5B%5Cvarepsilon_%7B2%7D%2C%5Cvarepsilon_%7B1%7D%5D%20%26%20Var%5B%5Cvarepsilon_%7B2%7D%5D%20%26%20...%20%26%20Cov%5B%5Cvarepsilon_%7B2%7D%2C%5Cvarepsilon_%7Bn%7D%5D%5C%5C%20%5Cvdots%20%26%20%5Cvdots%20%26%20%5Cddots%20%26%20%5Cvdots%5C%5C%20Cov%5B%5Cvarepsilon_%7Bn%7D%2C%5Cvarepsilon_%7B1%7D%5D%20%26%20Cov%5B%5Cvarepsilon_%7Bn%7D%2C%5Cvarepsilon_%7B2%7D%5D%20%26%20...%20%26Var%5B%5Cvarepsilon_%7Bn%7D%5D%20%5Cend%7Bmatrix%7D%5Cright%5D"/>
+   </p>
+<br/>
+
+**_OBS_**: Esse modelo admite vários casos especiais, dependendo:  
 <br/>
