@@ -1727,10 +1727,199 @@ Região crítica: <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5C
 
 <br/>
 
-\ Para obter $\lambda_c$ devemos obter a distribuição de $\lambda=\left [\frac{\hat\sigma^2}{\hat \sigma^2_0}\right]^\frac{n}{2}$. Para isto, vamos usar a estatística $W=(\lambda^\frac{-2}{n}-1) \left(\frac{n-k-1}{p}\right)$:
+Para obter <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Clambda_c"/> devemos obter a distribuição de <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Clambda%3D%5Cleft%20%5B%5Cfrac%7B%5Chat%5Csigma%5E2%7D%7B%5Chat%20%5Csigma%5E2_0%7D%5Cright%5D%5E%5Cfrac%7Bn%7D%7B2%7D"/>. Para isto, vamos usar a estatística <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20W%3D%28%5Clambda%5E%5Cfrac%7B-2%7D%7Bn%7D-1%29%20%5Cleft%28%5Cfrac%7Bn-k-1%7D%7Bp%7D%5Cright%29"/>:
+
 <br/>
 
 Temos que:
 
 <br/>
 
+* ```W``` é uma função monótona de <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Clambda"/>;
+
+<br/>
+
+* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20%5Clambda%5Cleq%5Clambda_0%20%26%5CLeftrightarrow%20%5Clambda%5E%7B-1%7D%20%5Cgeq%20%5Clambda_0%5E%7B-1%7D%20%5CLeftrightarrow%20%5Clambda%5E%7B-%5Cfrac%7B2%7D%7Bn%7D%7D%20%5Cgeq%20%5Clambda_0%5E%7B-%5Cfrac%7B2%7D%7Bn%7D%7D%20%5C%5C%20%26%5CLeftrightarrow%20%28%5Clambda%5E%7B-%5Cfrac%7B2%7D%7Bn%7D%7D-1%29%5Cleft%28%5Cfrac%7Bn-k-1%7D%7Bp%7D%5Cright%29%5Cgeq%20%28%5Clambda%5E%7B-%5Cfrac%7B2%7D%7Bn%7D%7D_0-1%29%5Cleft%28%5Cfrac%7Bn-k-1%7D%7Bp%7D%5Cright%29%5C%5C%20%26%5CLeftrightarrow%20W%20%5Cgeq%20W_0%20%5Cend%7Balign*%7D"/>
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20W%3D%28%5Clambda%5E%7B-%5Cfrac%7B2%7D%7Bn%7D%7D-1%29%5Cleft%28%5Cfrac%7Bn-k-1%7D%7Bp%7D%5Cright%29%20%26%3D%20%5Cleft%5B%5Cleft%5B%5Cleft%5C%7B%7B%5Cfrac%7B%5Chat%20%5Csigma%5E2%7D%7B%5Chat%20%5Csigma%5E2_0%7D%7D%5Cright%5C%7D%5E%7B%5Cfrac%7Bn%7D%7B2%7D%7D%5Cright%5D%5E%7B-%5Cfrac%7B2%7D%7Bn%7D%7D-1%5Cright%5D%5Cleft%28%5Cfrac%7Bn-k-1%7D%7Bp%7D%5Cright%29%5C%5C%20%26%3D%20%5Cleft%20%28%5Cfrac%7B%5Chat%20%5Csigma%5E2_0%7D%7B%5Chat%5Csigma%5E2%7D-1%5Cright%29%5Cleft%28%5Cfrac%7Bn-k-1%7D%7Bp%7D%5Cright%29%5C%5C%20%26%3D%20%5Cleft%28%5Cfrac%7B%5Chat%20%5Csigma%5E2_0-%20%5Chat%20%5Csigma%5E2%7D%7B%5Chat%20%5Csigma%5E2%7D%5Cright%29%5Ctimes%20%5Cleft%20%28%5Cfrac%7Bn-k-1%7D%7Bp%7D%5Cright%29%20%5Cend%7Balign*%7D"/>
+   </p>
+
+<br/>
+
+Segue que a distribuição de ```W``` é <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cchi%5E2_%7B%28p%2Cr%29%7D"/>. Ou melhor:
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cfrac%7B%5B%7B%5Cbf%20C%7D%20%7B%5Cbf%20%5Chat%5Cbeta%7D%20-%7B%5Cbf%20m%7D%5D%5ET%5B%7B%5Cbf%20C%7D%28%7B%5Cbf%20X%7D%5ET%7B%5Cbf%20X%7D%29%5E%7B-1%7D%7B%5Cbf%20C%7D%5ET%29%5E%7B-1%7D%5D%28%7B%5Cbf%20C%7D%20%7B%5Cbf%20%5Chat%5Cbeta%7D-%7B%5Cbf%20m%7D%29%7D%7B%5Csigma%5E2%7D%20%5Csim%5Cchi%5E2_%7B%28p%2Cr%29%7D"/>
+   </p>
+
+<br/>
+
+## **Modelos Lineares Generalizados**
+
+<br/>
+
+**_Introdução_**
+
+<br>
+
+O modelo de regressão normal linear tem o problema de ser utilizado quando o fenômeno sob o estudo não apresenta uma resposta, para o qual é razoável a suposição de normalidade. Uma saída é fazer transformação na variável resposta, com o objetivo de obter uma "nova variável" que seja normalmente distribuída. 
+<br/>
+
+#### Transformações utilizadas
+
+<br/>
+
+* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Csqrt%28y%29%24%3B%20%24log%28y%29"/>
+
+<br/>
+
+* Transformação _Box e Cox_ (1964)
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20y%5E*%3D%20%5Cleft%20%5C%7B%20%5Cbegin%7Barray%7D%7Bc%7D%20%5Cfrac%7By%5E%5Clambda-1%7D%7B%5Clambda%7D%5C%5C%20log%28y%29%5C%5C%20%5Cend%7Barray%7D%2C%20%5Cmbox%7Bsendo%7D%20%5C%20%7B%5Clambda%7D%20%5C%20%5Cmbox%7Buma%20constante%20desconhecida%7D%20%5Cright."/>
+   </p>
+
+<br/>
+
+Espera-se com essa transformação:
+
+<br/>
+
+1. <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20y%5E*"/> possua distribuição aproximadamente normal;
+
+<br/>
+
+2. <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20Var%28y%5E*%29"/> seja constante;
+
+<br/>
+
+3. <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20E%28y%5E*%29%3D%5Cbeta_0&plus;%5Cbeta_1X_1&plus;...&plus;%5Cbeta_kX_k%3D%5Ceta"/>
+
+<br/>
+
+Verificou-se, no entanto, que isso raramente ocorria para um mesmo valor de <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Clambda"/> _(Box and Draper, 1987)_.	
+
+<br/>
+
+Com o avanço computacional, outros modelos começaram a ser mais utilizados. No entanto, uma das propostas mais interessantes foi de _Nelder_ e _Wedderborn_ (1972), que propuseram os modelos lineares generalizados. 
+<br/>
+
+A ideia consistia em dar mais opções para distribuição da variável resposta e flexibilizar a relação funcional entre a média da variável resposta e o preditor linear <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Ceta"/>.
+
+<br/>
+
+**_Definição_**
+<br/>
+
+Os Modelos Lineares Generalizados são definidos a partir de duas componentes: a componente sistemática e a componente aleatória.
+
+<br/>
+
+**_Componente Sistemática_**
+<br/>
+
+* _Preditor Linear_: <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Ceta_i%3D%7B%5Cbf%20X%7D%5ET_i%20%7B%5Cbf%5Cbeta%7D%2C%20%7B%5Cbf%20%5Cbeta%7D%5ET%3D%28%5Cbeta_1%2C...%2C%5Cbeta_p%29%5ET."/> <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20P%3Cn"/> é um vetor de parâmetros desconhecidos a serem estimados, <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%7B%5Cbf%20x_i%7D%3D%28x_i1%2C...%2Cx_ip%29%5ET."/>
+
+<br/>
+
+* _Função de ligação_: <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20g%28%5Cmu_i%29%3D%5Ceta_i"/>, função bijetora, em que ```g(.)``` é uma função monótona diferenciável.
+
+<br/>
+
+**_Componente Aleatória_** 
+<br/>
+
+Para uma amostra <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20Y_1%2CY_2%2C...%2CY_n"/> de variáveis aleatórias independentes com médias <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmu_1%24%2C%20%24%5Cmu_2%24%2C...%2C%20%24%5Cmu_n"/>. Considera-se que a distribuição de <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20Y_i"/> pertença a família exponencial de distribuições.
+
+<br/>
+
+#### **_Família Exponencial_** 
+
+<br/>
+
+Consideramos <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20Y_1%2CY_2%2C...%2CY_n"/> variáveis indenpendentes com função de densidade de probabilidade (ou função de probabilidade) dada por:
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20f_y%28y_i%3B%5Ctheta_i%2C%5Cphi%29%3Dexp%5C%7B%5Cphi%5By_i%5Ctheta_i-b%28%5Ctheta_i%29%5D&plus;c%28y_i%2C%5Cphi%29%5C%7D"/>
+   </p>
+
+<br/>
+
+Em que <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cfrac%7B1%7D%7B%5Cphi%7D"/> é o parâmetro de dispersão (<img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cphi"/> é o parâmetro de precisão, <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cphi%20%3E%200"/>); ```b(.)``` e ```c(.)``` são funções contínuas diferenciáveis; <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Ctheta_i"/> é o parâmetro natural (canônico).
+
+<br/>
+
+**_Notação:_** <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20Y_i%20%5Cin"/> Família Exponencial (<img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmu_i%3B%5Cphi"/>)
+
+<br/>
+
+* Casos especiais: 
+<br/>
+
+1- O modelo clássico de regressão linear com erro normal. 
+<br/>
+
+2- O modelo logístico para análise de dados envolvendo proporções.
+<br/>
+
+3- O modelo de teste de vida (Análise de Sobrevivência).
+<br/>
+
+Sob condições usuais de regularidade:
+ <br/>
+ 
+ <p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20E%5Cleft%5C%7B%5Cfrac%7B%5Cpartial%20%5Clog%5Bf_y%28y_i%3B%5Ctheta_i%2C%5Cphi%29%5D%7D%7B%5Cpartial%20%5Ctheta_i%7D%5Cright%5C%7D%3D0%20%5Cquad%5Cmbox%7B%7D%5Cquad%5Cquad%20%5Cqquad%5Cmbox%7B%281%29%7D"/>
+   </p>
+ 
+  <br/>
+  
+  e
+  <br/>
+  
+ <p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20E%5Cleft%5C%7B%5Cfrac%7B%5Cpartial%5E2%20%5Clog%5Bf_y%28y_i%3B%5Ctheta_i%2C%5Cphi%29%5D%7D%7B%5Cpartial%20%5Ctheta_i%5E2%7D%5Cright%5C%7D%3D-%20E%5Cleft%5C%7B%5Cfrac%7B%5Cpartial%20%5Clog%5Bf_y%28y_i%3B%5Ctheta_i%2C%5Cphi%29%5D%7D%7B%5Cpartial%20%5Ctheta_i%7D%5Cright%5C%7D%5E2%5Cquad%5Cmbox%7B%7D%5Cquad%5Cquad%20%5Cqquad%5Cmbox%7B%282%29%7D"/>
+   </p>
+
+<br/>
+
+Segue que <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20E%28Y_i%29%3D%5Cmu_i%3Db%27%28%5Ctheta_i%29"/> e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20Var%28Y_i%29%3D%28%5Cphi%5E%7B-1%7D%29"/>, em que <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20V%28%5Cmu_i%29%3D%5Cfrac%7Bd%5Cmu_i%7D%7Bd%5Ctheta_i%7D"/> é a função de variância.
+
+<br/>
+
+De fato:
+
+<br/>
+
+Seja 
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20L%3Dlogf_y%28y_i%3B%5Ctheta_i%2C%5Cphi%29%5C%5C"/>
+   </p>
+   
+ <p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20L%3D%5Cphi%5By_i%5Ctheta_i-b%28%5Ctheta_i%29%5D&plus;c%28y_i%3B%5Cphi%29%5C%5C"/>
+   </p>
+   
+  <p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cfrac%7B%5Cpartial%20L%7D%7B%5Cpartial%20%5Ctheta_i%7D%3D%5Cphi%5By_i-b%27%28%5Ctheta_i%29%5D"/>
+   </p>   
+
+<br/>
+
+De ```(1)``` temos que: <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20E%20%5Cleft%5B%5Cfrac%7B%5Cpartial%20L%7D%7B%5Cpartial%20%5Ctheta_i%7D%5Cright%5D%3D0."/> Logo,
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20E%5B%5Cphi%28y_i-b%27%28%5Ctheta_i%29%29%5D%3D0%20%5CLongleftrightarrow%20E%5By_i%5D%3Db%27%28%5Ctheta_i%29"/>
+   </p>
+
+<br/>
