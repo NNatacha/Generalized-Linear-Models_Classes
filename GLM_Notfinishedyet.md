@@ -1669,25 +1669,68 @@ Então:
 
 <br/>
 
-Substituindo ${\bf \hat{n}}^*$ em $(1)$, obtemos:
+Substituindo <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%7B%5Cbf%20%5Chat%7Bn%7D%7D%5E*"/> em ```(1)```, obtemos:
 
 <br/>
 
-$${\bf \hat {\beta^0}}={\bf \hat{\beta}}-({\bf X}^T {\bf X})^{-1}[{\bf C}({\bf X}^T {\bf X})^{-1} {\bf C}^T]^{-1}[{\bf C} {\bf \hat{\beta}}-{\bf m}]$$
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%7B%5Cbf%20%5Chat%20%7B%5Cbeta%5E0%7D%7D%3D%7B%5Cbf%20%5Chat%7B%5Cbeta%7D%7D-%28%7B%5Cbf%20X%7D%5ET%20%7B%5Cbf%20X%7D%29%5E%7B-1%7D%5B%7B%5Cbf%20C%7D%28%7B%5Cbf%20X%7D%5ET%20%7B%5Cbf%20X%7D%29%5E%7B-1%7D%20%7B%5Cbf%20C%7D%5ET%5D%5E%7B-1%7D%5B%7B%5Cbf%20C%7D%20%7B%5Cbf%20%5Chat%7B%5Cbeta%7D%7D-%7B%5Cbf%20m%7D%5D"/>
+   </p>
 <br/>
 
-\ Finalmente, o ${\overset{maXL(\mathbf{\beta},\sigma^{2};\mathbf{y},\mathbf{X})}{\scriptsize{\mathbf\Theta\in \Theta}}}$ é
-
-<br/>
-
-\begin{eqnarray}
-L(\hat \beta^0,\sigma^2;{\bf y}, {\bf X})&=& \left(\frac{1}{2{\pi}{\hat{\sigma_0}^2}}\right)^{\frac{n}{2}}\exp\left\{-\frac{1}{2\hat{\sigma_0}^2}(\mathbf{y}-\mathbf{X}\mathbf{\hat{\beta^0}})^{T}(\mathbf{y}-\mathbf{X}\mathbf{\hat{\beta^0}})\right\}\\
-&=&\left(\frac{1}{2{\pi}{\hat{\sigma_0}^2}}\right)^{\frac{n}{2}}\exp\left\{-\frac{n}{2\hat{\sigma_0}^2}\mathbf{\hat{\sigma_0^2}}\right\}\\
-&=&\left(\frac{1}{2\pi \hat \sigma^2_0}\right)^\frac{n}{2} exp\left(-\frac{n}{2}\right)
-\end{eqnarray}
+Finalmente, o <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%7B%5Coverset%7BmaXL%28%5Cmathbf%7B%5Cbeta%7D%2C%5Csigma%5E%7B2%7D%3B%5Cmathbf%7By%7D%2C%5Cmathbf%7BX%7D%29%7D%7B%5Cscriptsize%7B%5Cmathbf%5CTheta%5Cin%20%5CTheta%7D%7D%7D"/> é
 
 <br/>
 
-\ Vamos obter, agora, a estatística de teste da R.V.G:
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20L%28%5Chat%20%5Cbeta%5E0%2C%5Csigma%5E2%3B%7B%5Cbf%20y%7D%2C%20%7B%5Cbf%20X%7D%29%26%3D%20%5Cleft%28%5Cfrac%7B1%7D%7B2%7B%5Cpi%7D%7B%5Chat%7B%5Csigma_0%7D%5E2%7D%7D%5Cright%29%5E%7B%5Cfrac%7Bn%7D%7B2%7D%7D%5Cexp%5Cleft%5C%7B-%5Cfrac%7B1%7D%7B2%5Chat%7B%5Csigma_0%7D%5E2%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Chat%7B%5Cbeta%5E0%7D%7D%29%5E%7BT%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Chat%7B%5Cbeta%5E0%7D%7D%29%5Cright%5C%7D%5C%5C%20%26%3D%5Cleft%28%5Cfrac%7B1%7D%7B2%7B%5Cpi%7D%7B%5Chat%7B%5Csigma_0%7D%5E2%7D%7D%5Cright%29%5E%7B%5Cfrac%7Bn%7D%7B2%7D%7D%5Cexp%5Cleft%5C%7B-%5Cfrac%7Bn%7D%7B2%5Chat%7B%5Csigma_0%7D%5E2%7D%5Cmathbf%7B%5Chat%7B%5Csigma_0%5E2%7D%7D%5Cright%5C%7D%5C%5C%20%26%3D%5Cleft%28%5Cfrac%7B1%7D%7B2%5Cpi%20%5Chat%20%5Csigma%5E2_0%7D%5Cright%29%5E%5Cfrac%7Bn%7D%7B2%7D%20exp%5Cleft%28-%5Cfrac%7Bn%7D%7B2%7D%5Cright%29%20%5Cend%7Balign*%7D"/>
+   </p>
 
 <br/>
+
+Vamos obter, agora, a estatística de teste da R.V.G:
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Clambda%3D%5Cfrac%7B%20%5Cleft%5B%5Cfrac%7B1%7D%7B2%5Cpi%20%5Chat%20%5Csigma%5E2_0%7D%5Cright%5D%5E%5Cfrac%7Bn%7D%7B2%7Dexp%5Cleft%5B%5Cfrac%7B-n%7D%7B2%7D%5Cright%5D%7D%7B%5Cleft%5B%5Cfrac%7B1%7D%7B2%5Cpi%20%5Chat%20%5Csigma%5E2%7D%5Cright%5D%5E%5Cfrac%7Bn%7D%7B2%7Dexp%5Cleft%5B%5Cfrac%7B-n%7D%7B2%7D%5Cright%5D%7D%20%3D%5Cfrac%7B%5Cleft%5B%5Cfrac%7B1%7D%7B2%5Cpi%20%5Chat%20%5Csigma%5E2_0%7D%5Cright%5D%5E%5Cfrac%7Bn%7D%7B2%7D%7D%20%7B%5Cleft%5B%5Cfrac%7B1%7D%7B2%5Cpi%20%5Chat%20%5Csigma%5E2%7D%5Cright%5D%5E%5Cfrac%7Bn%7D%7B2%7D%7D"/>
+   </p>
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Clambda%3D%5Cfrac%7B%20%5Cleft%5B%5Cfrac%7B1%7D%7B2%5Cpi%20%5Chat%20%5Csigma%5E2_0%7D%5Cright%5D%5E%5Cfrac%7Bn%7D%7B2%7D%7D%7B%5Cleft%5B%5Cfrac%7B1%7D%7B2%5Cpi%20%5Chat%20%5Csigma%5E2%7D%5Cright%5D%7D%20%3D%5Cfrac%7B%5Cleft%5B%5Cfrac%7B1%7D%7B%5Chat%20%5Csigma_0%5E2%7D%5Cright%5D%5E%5Cfrac%7Bn%7D%7B2%7D%7D%20%7B%5Cleft%5B%5Cfrac%7B1%7D%7B2%5Cpi%20%5Chat%20%5Csigma%5E2%7D%5Cright%5D%5E%5Cfrac%7Bn%7D%7B2%7D%7D%3D%20%5Cleft%20%5B%5Cfrac%7B%5Chat%5Csigma%5E2%7D%7B%5Chat%5Csigma%5E2_0%7D%5Cright%5D%5E%5Cfrac%7Bn%7D%7B2%7D"/>
+   </p>
+
+<br/>
+
+Em que,
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Chat%20%5Csigma%5E2%3D%5Cfrac%7B1%7D%7Bn%7D%28%7B%5Cbf%20y%7D-%7B%5Cbf%20X%7D%20%5Chat%20%7B%5Cbf%20%5Cbeta%7D%29%5ET%28%7B%5Cbf%20y%7D-%7B%5Cbf%20X%7D%20%5Chat%20%5Cbeta%29"/>
+   </p>
+   
+<br/>
+
+e
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Chat%20%5Csigma%5E2_0%3D%5Cfrac%7B1%7D%7Bn%7D%28%7B%5Cbf%20y%7D-%7B%5Cbf%20X%7D%20%7B%5Cbf%20%5Chat%20%5Cbeta%7D_0%29%5ET%28%7B%5Cbf%20y%7D-%7B%5Cbf%20X%7D%20%7B%5Cbf%20%5Chat%20%5Cbeta%7D_0%29"/>
+   </p>
+
+<br/>
+
+Região crítica: <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Clambda%3D%5Cleft%20%5B%5Cfrac%7B%5Chat%5Csigma%5E2%7D%7B%5Chat%20%5Csigma%5E2_0%7D%5Cright%5D%5E%5Cfrac%7Bn%7D%7B2%7D%20%5Cleq%20%5Clambda_c"/>
+
+<br/>
+
+\ Para obter $\lambda_c$ devemos obter a distribuição de $\lambda=\left [\frac{\hat\sigma^2}{\hat \sigma^2_0}\right]^\frac{n}{2}$. Para isto, vamos usar a estatística $W=(\lambda^\frac{-2}{n}-1) \left(\frac{n-k-1}{p}\right)$:
+<br/>
+
+Temos que:
+
+<br/>
+
