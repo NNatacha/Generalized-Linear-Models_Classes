@@ -779,7 +779,7 @@ Em que:
 - <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cmathbf%7B%5Cbeta%7D"/> é um vetor <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5B%28k&plus;1%29%5Ctimes%201%5D"/> de parâmetros desconhecidos definidos e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5COmega_%5Cmathbf%7B%5Cbeta%7D"/>; 
 <br/>
 
-- <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7B%5Cepsilon%7D"/> é um vetor aleatório tal que <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20E%5B%5Cepsilon%5D%3D0"/> e,
+- <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Clarge%20%5Cmathbf%7B%5Cepsilon%7D"/> é um vetor aleatório tal que <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20E%5B%5Cepsilon%5D%3D0"/> e,
 <br/>
 
 <p align="center">
@@ -788,4 +788,32 @@ Em que:
 <br/>
 
 **_OBS_**: Esse modelo admite vários casos especiais, dependendo:  
+<br/>
+1. da distribuição dos erros;  
+2. da estrutura de covariância definida na matriz <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%5CSigma"/>;
+3. do posto e da estrutura da matriz <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BX%7D"/>.
+
+<br/>
+
+**Exemplos:**  
+<br/>
+
+<img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20y%5Crightarrow"/> valor do aluguel (R$:50,00)  
+<img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20x%5Crightarrow"/> idade (anos)
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20y_i%3D%5Cbeta_0&plus;%5Cbeta_1x_i&plus;%5Cepsilon_i"/>
+   </p>
+<br/>
+
+ Com <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20E%5B%5Cepsilon_%7Bi%7D%5D%3D0"/>; <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20Var%5B%5Cepsilon_%7Bi%7D%5D%3D%5Csigma%5E2"/>; <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20D%3D%7B5%5Cle%20X%20%5Cle%2020%7D"/>.
+
+<br/>
+
+Tomamos uma amostra de ```n=5``` observações: <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20x_%7B1%7D%3D10%2Cx_%7B2%7D%3D13%2Cx_%7B3%7D%3D5%2Cx_%7B4%7D%3D7%2Cx_%7B5%7D%3D20"/>. Observou-se <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20y_%7B1%7D%2C...%2Cy_%7B5%7D"/>. 
+<br/>
+
+Com base na amostra, podemos fazer inferências. Por exemplo, se ```x=8``` podemos estimar a média do valor do aluguel sem precisar 
+<img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20F_y%288%29%2C%20%5Cquad%5Cmbox%7Bpois%7D%5Cquad%5Cmbox%20x%3D8%20%5Cin%20D"/>.
 <br/>
