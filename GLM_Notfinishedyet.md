@@ -1204,6 +1204,7 @@ Como,
    </p>
 
 <br/>
+
 5. A matriz de covariâncias de <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Chat%7B%5Cbeta%7D"/> é <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Csigma%5E2%5Cmathbf%7B%28X%5ETX%29%5E%7B-1%7D%7D."/>
 
 <br/>
@@ -1310,10 +1311,10 @@ Em que <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20J_n
 *iii)* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20SQRes%3D%5Cmathbf%7Br%5ETr%3DY%5ET%28I-H%29Y%7D."/>
 
 <br/>
+
 **RESUMO:**
 
 <br/>
-
 <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20SQT%3D%5Cmathbf%7BY%5ETY-n%5Cbar%7BY%7D%5E2%7D%3B"/>
 <br/>
 
@@ -1331,5 +1332,252 @@ Então: <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20Tr
 <br/>
 
 Se <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7BA%7D"/> é idempotente, <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20m%3D1"/> e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20Tr%28%5Cmathbf%7BA%7D%29%3Dr%28%5Cmathbf%7BA%7D%29."/>
+
+<br/>
+
+**Resultado 02:** Sejam <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BA%7D"/> e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BB%7D"/> matrizes <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20m%5Ctimes%20n"/> e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20m%5Ctimes%20m"/>, respectivamente. Então, <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BTr%28AB%29%3DTr%28BA%29%7D."/>
+
+<br/>
+
+**Tabela da Análise de Variância (ANOVA)**
+
+F.V          |  G.L      |   SQ         |       QM   | <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7BF_%7BTab%7D%7D"/>
+:------------ | :---------: | :-------------:| :-----------:| :-------:
+Regressão    |  ```k```        | <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7B%5Chat%5Cbeta%5E2X%5ETY-n%5Cbar%7BY%7D%5E2%7D"/> | <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cfrac%7BSQReg%7D%7Bk%7D"/> | <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cfrac%7BQMReg%7D%7BQMRes%7D"/>
+Resíduos     | ```n-k-1```     | <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7BY%5ETY-%5Chat%7B%5Cbeta%7D%5ETX%5ETY%7D"/> | <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cfrac%7BSQRes%7D%7Bn-k-1%7D"/>|
+TOTAL        | ```n-1```      | <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20Y%5ETY-n%5Cbar%7BY%7D%5E2"/> |
+
+<br/>
+
+Sob a hipótese de que <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7B%5Cbeta%5E*%7D%3D%28%5Cbeta_1%2C...%2C%5Cbeta_k%29%5ET%3D%5Cmathbf%7B0%7D"/>, temos:
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20F%3D%5Cfrac%7BQMReg%7D%7BQMRes%7D%5Csim%20F_%7B%5Bk%3Bn-k-1%5D%7D"/>
+   </p>
+
+<br/>
+
+**Teste:** <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20H_0%3A%5Cbeta_1%3D%5Cbeta_2%3D...%3D%5Cbeta_k%3D0"/> contra <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20H_1%3A"/> Pelo menos um dos <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbeta_i"/>'s é não nulo.
+
+<br/>
+
+**_Regra de Decisão_**: Rejeitar <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20H_0"/> se <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20F_%7BCal%7D%5Cge%20F_%7BTab%7D"/>. Em que <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20F_%7BTab%7D"/> é tal que
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20P%5BF_%7B%5Bk%3Bn-k-1%5D%7D%5Cge%20F_%7BTab%7D%5D%3D%5Calpha"/>
+   </p>
+
+<br/>
+
+_OBS_: Este teste verifica a importancia da inclusão <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%28x_1%2C...%2Cx_k%29"/> no modelo.
+
+<br/>
+
+#### Teste - Hipótese Linear Geral
+
+<br/>
+
+EX: <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20Y%3D%5Cbeta_0&plus;%5Cbeta_1X_1&plus;%5Cbeta_2X_2&plus;%5Cbeta_3X_3&plus;%5Cbeta_4X_4&plus;%5Cepsilon"/>
+
+<br/>
+
+_HIPÓTESES:_
+
+<br/>
+
+*i)* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20H_0%3A%5Cbeta_2%3D0%2C%5C%20%5Cbeta_4%3D0%20%5CLeftrightarrow%20%5Cbf%7BC%5Cbeta%7D%3Dm"/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7BC%7D%3D%5Cleft%5B%20%5Cbegin%7Barray%7D%7Bccccc%7D%200%20%26%200%20%26%201%20%26%200%20%26%200%5C%5C%200%20%26%200%20%26%200%20%26%200%20%26%201%5C%5C%20%5Cend%7Barray%7D%20%5Cright%5D%3B%20%5Cbf%7Bm%7D%3D%5Cleft%5B%20%5Cbegin%7Barray%7D%7Bc%7D%200%5C%5C%20%5Cbf%7B0%7D%5C%5C%20%5Cend%7Barray%7D%20%5Cright%5D"/>
+   </p>
+<br/>
+
+Sob <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20H_0"/>, o modelo fica <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20Y%3D%5Cbeta_0&plus;%5Cbeta_1X_1&plus;%5Cbeta_3X_3&plus;%5Cepsilon">: 
+
+<br/>
+
+*ii)* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20H_0%3A%5Cbeta_1&plus;%5Cbeta_3%3D0%20%5CLeftrightarrow%20%5Cbf%7BC%5Cbeta%7D%3Dm"/>
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7BC%7D%3D%5Cleft%5B%20%5Cbegin%7Barray%7D%7Bccccc%7D%200%20%26%201%20%26%200%20%26%201%20%26%200%5C%5C%20%5Cend%7Barray%7D%20%5Cright%5D%3B%20%5Cbf%7Bm%7D%3D0"/>
+   </p>
+<br/>
+
+Sob <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20H_0"/>, o modelo fica:
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20Y%26%3D%5Cbeta_0&plus;%5Cbeta_1X_1&plus;%5Cbeta_2X_2-%5Cbeta_1X_3&plus;%5Cbeta_4X_4&plus;%5Cepsilon%5C%5C%20%26%3D%5Cbeta_0&plus;%5Cbeta_1%28X_1-X_3%29&plus;%5Cbeta_2X_2&plus;%5Cbeta_4X_4&plus;%5Cepsilon%20%5Cend%7Balign*%7D"/>
+   </p>
+
+<br/>
+
+*iii)* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20H_0%3A%5Cbeta_2%2C%5C%20%5Cbeta_3%3D6"/>
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7BC%7D%3D%5Cleft%5B%20%5Cbegin%7Barray%7D%7Bccccc%7D%200%20%26%200%20%26%201%20%26%200%20%26%200%5C%5C%200%20%26%200%20%26%200%20%26%201%20%26%200%5C%5C%20%5Cend%7Barray%7D%20%5Cright%5D%3B%20%5Cbf%7Bm%7D%3D%5Cleft%5B%20%5Cbegin%7Barray%7D%7Bc%7D%202%5C%5C%20%5Cbf%7B6%7D%5C%5C%20%5Cend%7Barray%7D%20%5Cright%5D"/>
+   </p>
+<br/>
+
+Sob <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20H_0"/>,
+
+<br/>
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20Y%26%3D%5Cbeta_0&plus;%5Cbeta_1X_1&plus;2X_2&plus;6X_3&plus;%5Cbeta_4X_4&plus;%5Cepsilon%5C%5C%20%26%3D%5Cbeta_0&plus;2X_2&plus;6X_3&plus;%5Cbeta_1X_1&plus;%5Cbeta_4X_4&plus;%5Cepsilon%20%5Cend%7Balign*%7D"/>
+   </p>
+
+<br/>
+
+*iv)* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20H_0%3A%5Cbeta_1%3D%5Cbeta_2%3D%5Cbeta_3%3D%5Cbeta_4%3D0%20%5CLeftrightarrow%20%5Cbf%7BC%5Cbeta%3Dm%7D"/>
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20H_0%3A%5Cbeta_1%3D%5Cbeta_2%3D%5Cbeta_3%3D%5Cbeta_4%3D0%20%5CLeftrightarrow%20%5Cleft%20%5C%7B%20%5Cbegin%7Barray%7D%7Bc%7D%20%5Cbeta_1-%5Cbeta_2%3D0%5C%5C%20%5Cbeta_1-%5Cbeta_3%3D0%5C%5C%20%5Cbeta_1-%5Cbeta_4%3D0%5C%5C%20%5Cend%7Barray%7D%20%5Cright."/>
+   </p>
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7BC%7D%3D%5Cleft%5B%20%5Cbegin%7Barray%7D%7Bccccc%7D%200%20%26%201%20%26%20-1%20%26%200%20%26%200%5C%5C%200%20%26%201%20%26%200%20%26%20-1%20%26%200%5C%5C%200%20%26%201%20%26%200%20%26%200%20%26%20-1%5C%5C%20%5Cend%7Barray%7D%20%5Cright%5D%3B%20%5Cbf%7Bm%7D%3D%5Cleft%5B%20%5Cbegin%7Barray%7D%7Bc%7D%200%5C%5C%200%5C%5C%200%20%5Cend%7Barray%7D%20%5Cright%5D"/>
+
+<br/>
+
+**Ou** 
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cleft%20%5C%7B%20%5Cbegin%7Barray%7D%7Bc%7D%20%5Cbeta_1-%5Cbeta_2%3D0%5C%5C%20%5Cbeta_1-%5Cbeta_3%3D0%5C%5C%20%5Cbeta_1-%5Cbeta_4%3D0%5C%5C%20%5Cend%7Barray%7D%20%5Cright.%20%5CLeftrightarrow%20%5Cbf%7BC%7D%3D%5Cleft%5B%20%5Cbegin%7Barray%7D%7Bccccc%7D%200%20%26%201%20%26%20-1%20%26%200%20%26%200%5C%5C%200%20%26%201%20%26%200%20%26%20-1%20%26%200%5C%5C%200%20%26%201%20%26%200%20%26%200%20%26%20-1%5C%5C%20%5Cend%7Barray%7D%20%5Cright%5D%3B%20%5Cbf%7Bm%7D%3D%5Cleft%5B%20%5Cbegin%7Barray%7D%7Bc%7D%200%5C%5C%200%5C%5C%200%20%5Cend%7Barray%7D%20%5Cright%5D"/>
+   </p>
+
+<br/>
+
+**_OBS_**: A matriz <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7BC%7D"/> e o vetor <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7Bm%7D"/> não, necessariamente, são iguais.
+
+<br/>
+
+Queremos testar hipóteses do tipo:
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Bcases%7D%20H_0%3A%20%5Cbf%7BC%5Cbeta%7D%3Dm%5C%5C%20H_1%3A%20%5Cbf%7BC%5Cbeta%7D%5Cneq%20m%5C%5C%20%5Cend%7Bcases%7D%5CRightarrow%20%5Cmakebox%7BHipotese%20linear%20geral%7D"/>
+   </p>
+
+<br/>
+
+A matriz <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7BC%7D"/> é <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20p%5Ctimes%20%28k&plus;1%29"/> de constantes
+<br/>
+<br/>
+
+*1.*<img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cquad%20r%28%5Cmathbf%7BC%7D%29%3Dp%3Ck&plus;1"/>, ```p``` é o número de hipóteses;
+<br/>
+
+*2.* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BC%7D"/> é o posto completo e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7Bm%7D"/> é um vetor <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20p%5Ctimes%201."/>
+
+<br/>
+
+## Teste da razão de Verossimilhança Generalizada (_TRVG_)
+
+<br/>
+
+Seja <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20L%28%5Cmathbf%7B%5Ctheta%7D%3Bx_%7B1%7D%2C%20%5Cldots%2Cx_%7Bn%7D%29%2C"/> a função de verossimilhança com base de uma amostra <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20x_%7B1%7D%2C%20%5Cldots%2Cx_%7Bn%7D%2C%5Cmathbf%7B%5Ctheta%7D%20%5Cin%20%5CTheta"/>. Para testar:
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cleft%20%5C%7B%20%5Cbegin%7Barray%7D%7Bc%7D%20H_%7B0%7D%3A%5Cmathbf%7B%5Ctheta%7D%5Cin%20%5CTheta_%7B0%7D%5Csubset%20%5CTheta%5C%5C%20H_%7B1%7D%3A%5Cmathbf%7B%5Ctheta%7D%5Cin%20%5CTheta%20-%20%5CTheta_%7B0%7D%5C%5C%20%5Cend%7Barray%7D%20%5Cright."/>
+   </p>
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Clarge%20%5Clambda%3D%5Clambda%28x_%7B1%7D%2C%20%5Cldots%2Cx_%7Bn%7D%29%3D%5Cfrac%7B%5Coverset%7BmaXL%28%5Cmathbf%7B%5Ctheta%7D%3Bx_%7B1%7D%2C%20%5Cldots%2Cx_%7Bn%7D%29%7D%7B%5Cscriptsize%7B%5Ctheta%7D%5Cin%20%5CTheta_%7B0%7D%7D%7D%7B%7B%5Coverset%7BmaXL%28%5Cmathbf%7B%5Ctheta%7D%3Bx_%7B1%7D%2C%20%5Cldots%2Cx_%7Bn%7D%29%7D%7B%5Cscriptsize%7B%5Ctheta%7D%5Cin%20%5CTheta%7D%7D%7D"/>
+   </p>
+
+<br/>
+
+Que é chamada de _razão de verossimilhança generalizada_ (R.V.G.).
+
+<br/>
+
+O teste da R.V.G. rejeita <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20H_%7B0%7D"/>, se <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Clambda%5Cleq%5Clambda_%7B0%7D"/> em que <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%200%5Cleq%5Clambda_%7B0%7D%5Cleq1"/> é tal que
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20P%5B%5Clambda%28X_%7B1%7D%2C%20%5Cldots%2CX_%7Bn%7D%29%5Cleq%5Clambda_%7B0%7D%7CH_%7B0%7D%20%5Ctextrm%7B%20verdadeiro%20%7D%5D%3D%20%5Calpha"/>
+   </p>
+
+<br/>
+
+Para testar as hipóteses: <p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cleft%20%5C%7B%20%5Cbegin%7Barray%7D%7Bc%7D%20H_%7B0%7D%3A%5Cmathbf%7BC%7D%5Cmathbf%7B%5Cbeta%7D%3D%5Cmathbf%7Bm%7D%5C%5C%20H_%7B1%7D%3A%5Cmathbf%7BC%7D%5Cmathbf%7B%5Cbeta%7D%5Cneq%5Cmathbf%7Bm%7D%5C%5C%20%5Cend%7Barray%7D%20%5Cright."/>
+   </p>
+
+<br/> 
+
+Temos:
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20L%28%5Cbeta%2C%5Csigma%5E%7B2%7D%3B%5Cmathbf%7By%7D%2C%20%5Cmathbf%7BX%7D%29%3D%20%5Cleft%28%5Cfrac%7B1%7D%7B2%7B%5Cpi%7D%7B%5Csigma%5E%7B2%7D%7D%7D%5Cright%29%5E%7B%5Cfrac%7Bn%7D%7B2%7D%7D%5Cexp%5Cleft%5C%7B-%5Cfrac%7B1%7D%7B2%5Csigma%5E%7B2%7D%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5E%7BT%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5Cright%5C%7D"/>
+   </p>
+<br/>
+
+<img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cbf%7B%5CTheta%3D%5C%7B%7B%28%5Cmathbf%7B%5Cbeta%7D%2C%5Csigma%5E%7B2%7D%29%2C-%5Cinfty%20%3C%20%5Cbeta_%7Bj%7D%3C%5Cinfty%2C%5Csigma%5E%7B2%7D%3E0%2C%20j%3D0%2C%20%5Cldots%2Ck%7D%5C%7D%7D"/>
+<br/>
+
+<img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cbf%7B%5CTheta_%7B0%7D%3D%7B%5C%7B%28%5Cbeta%2C%5Csigma%5E%7B2%7D%29%5Cin%20%5CTheta%7CC%5Cbeta%7D%3Dm%7D%5C%7D"/>
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20%7B%5Coverset%7BmaXL%28%5Cmathbf%7B%5Cbeta%7D%2C%20%5Csigma%5E%7B2%7D%3B%5Cmathbf%7By%7D%2C%5Cmathbf%7BX%7D%29%7D%7B%5Cscriptsize%7B%28%5Cmathbf%5Cbeta%2C%5Csigma%5E%7B2%7D%29%5Cin%20%5CTheta%7D%7D%7D%20%26%3D%20L%28%5Cmathbf%7B%5Cbeta%7D%2C%20%5Csigma%5E%7B2%7D%3B%5Cmathbf%7By%7D%2C%5Cmathbf%7BX%7D%29%5C%5C%20%26%3D%5Cleft%28%5Cfrac%7B1%7D%7B2%7B%5Cpi%7D%7B%5Csigma%5E%7B2%7D%7D%7D%5Cright%29%5E%7B%5Cfrac%7Bn%7D%7B2%7D%7D%5Cexp%5Cleft%5C%7B-%5Cfrac%7B1%7D%7B2%5Csigma%5E%7B2%7D%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Chat%5Cbeta%7D%29%5E%7BT%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Chat%5Cbeta%7D%29%5Cright%5C%7D%5C%5C%20%26%3D%5Cleft%28%5Cfrac%7B1%7D%7B2%7B%5Cpi%7D%7B%5Csigma%5E%7B2%7D%7D%7D%5Cright%29%5E%7B%5Cfrac%7Bn%7D%7B2%7D%7D%5Cexp%5Cleft%5C%7B-%5Cfrac%7B1%7D%7B2%5Csigma%5E%7B2%7D%7Dn%5Csigma%5E%7B2%7D%5Cright%5C%7D%5C%5C%20%26%3D%5Cleft%28%5Cfrac%7B1%7D%7B2%7B%5Cpi%7D%7B%5Csigma%5E%7B2%7D%7D%7D%5Cright%29%5E%7B%5Cfrac%7Bn%7D%7B2%7D%7D%5Cexp%5Cleft%5C%7B-%5Cfrac%7Bn%7D%7B2%7D%5Cright%5C%7D%20%5Cend%7Balign*%7D"/>
+   </p>
+
+<br/>
+
+Em que, <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Csigma%5E%7B2%7D%3D%5Cfrac%7B1%7D%7Bn%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5E%7BT%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29."/>
+
+<br/>
+
+O objetivo agora é maximizar <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20L%28%5Cmathbf%7B%5Cbeta%7D%2C%20%5Csigma%5E%7B2%7D%3B%5Cmathbf%7By%7D%2C%5Cmathbf%7BX%7D%29"/> sujeito à restrição <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BC%7D%5Cmathbf%7B%5Cbeta%7D%3D%5Cmathbf%7Bm%7D."/> Para isso, usaremos os multiplicadores de Lagrange.
+
+<br/>
+
+Seja <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20L%3DL%28%5Cmathbf%7B%5Cbeta%7D%2C%20%5Csigma%5E%7B2%7D%3B%5Cmathbf%7By%7D%2C%5Cmathbf%7BX%7D%29-%5Cmathbf%7Bn%7D%5E%7BT%7D%28%5Cmathbf%7BC%7D%5Cmathbf%7B%5Cbeta%7D%3D%5Cmathbf%7Bm%7D%29"/>, em que <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7Bn%7D%5E%7BT%7D"/> é o vetor <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20P%5Ctimes%201"/> de multiplicadores de Lagrange.
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20%5Cfrac%7B%5Cpartial%20L%7D%7B%5Cpartial%20%5Cbeta%7D%26%3DL%28%5Cmathbf%7B%5Cbeta%7D%2C%20%5Csigma%5E%7B2%7D%3B%5Cmathbf%7By%7D%2C%5Cmathbf%7BX%7D%29%5Cleft%5B-%5Cfrac%7B1%7D%7B2%5Csigma%5E%7B2%7D%7D%28-2%7B%5Cmathbf%7BX%7D%5E%7BT%7D%7D&plus;2%7B%5Cmathbf%7BX%7D%5E%7BT%7D%7D%7B%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%7D%29%5Cright%5D-%7B%5Cmathbf%7BC%7D%5E%7BT%7D%7B%5Cmathbf%7Bn%7D%7D%7D%5C%5C%20%26%3D-%5Cfrac%7B1%7D%7B2%5Csigma%5E%7B2%7D%7D%28%7B%5Cmathbf%7BX%7D%5E%7BT%7D%7D%7B%5Cmathbf%7BX%7D%7B%5Cmathbf%7B%5Cbeta%7D%7D-%7B%5Cmathbf%7BX%7D%5E%7BT%7D%7D%7B%5Cmathbf%7By%7D%29L%28%5Cmathbf%7B%5Cbeta%7D%2C%5Csigma%5E%7B2%7D%3B%5Cmathbf%7By%7D%2C%5Cmathbf%7BX%7D%29-%7B%5Cmathbf%7BC%7D%5E%7BT%7D%7B%5Cmathbf%7Bn%7D%7D%7D%7D%7D%5C%5C%20%5Cfrac%7B%5Cpartial%20L%7D%7B%5Cpartial%5Csigma%5E%7B2%7D%7D%26%3D%5Cfrac%7Bn%7D%7B2%7D%5Cleft%28%5Cfrac%7B1%7D%7B2%7B%5Cpi%7D%7B%5Csigma%5E%7B2%7D%7D%7D%5Cright%29%5E%7B%5Cfrac%7Bn%7D%7B2%7D-1%7D%5Cleft%28-%5Cfrac%7B1%7D%7B2%7B%5Cpi%7D%7B%5Csigma%5E%7B4%7D%7D%7D%5Cright%29%5Cexp%5Cleft%5C%7B-%5Cfrac%7B1%7D%7B2%5Csigma%5E%7B2%7D%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5E%7BT%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5Cright%5C%7D%5C%5C%20%26&plus;%5Cleft%28%5Cfrac%7B1%7D%7B2%7B%5Cpi%7D%7B%5Csigma%5E%7B2%7D%7D%7D%5Cright%29%5E%7B%5Cfrac%7Bn%7D%7B2%7D%7D%5Cexp%5Cleft%5C%7B-%5Cfrac%7B1%7D%7B2%5Csigma%5E%7B2%7D%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5E%7BT%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5Cright%5C%7D%5Cleft%28%5Cfrac%7B1%7D%7B2%5Csigma%5E%7B4%7D%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5E%7BT%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5Cright%29%5C%5C%20%5Cend%7Balign*%7D"/>
+   </p>
+ <p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20%26%3D%5Cfrac%7Bn%7D%7B2%7D%5Cleft%28%5Cfrac%7B1%7D%7B2%7B%5Cpi%7D%7B%5Csigma%5E%7B2%7D%7D%7D%5Cright%29%5E%7B-1%7D%5Cleft%28-%5Cfrac%7B1%7D%7B2%7B%5CPi%7D%7B%5Csigma%5E%7B4%7D%7D%7D%5Cright%29L%28%5Cmathbf%7B%5Cbeta%7D%2C%20%5Csigma%5E%7B2%7D%3B%5Cmathbf%7By%7D%2C%5Cmathbf%7BX%7D%29&plus;L%28%5Cmathbf%7B%5Cbeta%7D%2C%20%5Csigma%5E%7B2%7D%3B%5Cmathbf%7By%7D%2C%5Cmathbf%7BX%7D%29%5Cfrac%7B1%7D%7B2%5Csigma%5E%7B4%7D%7D%5Cleft%5B%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5E%7BT%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5Cright%5D%5C%5C%20%26%3DL%28%5Cmathbf%7B%5Cbeta%7D%2C%20%5Csigma%5E%7B2%7D%3B%5Cmathbf%7By%7D%2C%5Cmathbf%7BX%7D%29%5Cleft%5B-%5Cfrac%7Bn%7D%7B2%5Csigma%5E%7B2%7D%7D&plus;%5Cfrac%7B1%7D%7B2%5Csigma%5E%7B4%7D%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5E%7BT%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5Cright%5D%5C%5C%20%26%3D%5Cfrac%7B1%7D%7B2%5Cpi%5E%7B2%7D%7DL%28%5Cmathbf%7B%5Cbeta%7D%2C%20%5Csigma%5E%7B2%7D%3B%5Cmathbf%7By%7D%2C%5Cmathbf%7BX%7D%29%5Cleft%5B-%20n&plus;%5Cfrac%7B1%7D%7B%5Csigma%5E%7B2%7D%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5E%7BT%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5Cright%5D%20%5Cend%7Balign*%7D"/>
+   </p>   
+<br/>
+<br/>
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20%5Cfrac%7B%5Cpartial%20L%7D%7B%5Cpartial%5Csigma%5E%7B2%7D%7D%26%3D%5Cfrac%7Bn%7D%7B2%7D%5Cleft%28%5Cfrac%7B1%7D%7B2%7B%5Cpi%7D%7B%5Csigma%5E%7B2%7D%7D%7D%5Cright%29%5E%7B%5Cfrac%7Bn%7D%7B2%7D-1%7D%5Cleft%28-%5Cfrac%7B1%7D%7B2%7B%5Cpi%7D%7B%5Csigma%5E%7B4%7D%7D%7D%5Cright%29%5Cexp%5Cleft%5C%7B-%5Cfrac%7B1%7D%7B2%5Csigma%5E%7B2%7D%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5E%7BT%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5Cright%5C%7D%5C%5C%20%26&plus;%5Cleft%28%5Cfrac%7B1%7D%7B2%7B%5Cpi%7D%7B%5Csigma%5E%7B2%7D%7D%7D%5Cright%29%5E%7B%5Cfrac%7Bn%7D%7B2%7D%7D%5Cexp%5Cleft%5C%7B-%5Cfrac%7B1%7D%7B2%5Csigma%5E%7B2%7D%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5E%7BT%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5Cright%5C%7D%5Cleft%28%5Cfrac%7B1%7D%7B2%5Csigma%5E%7B4%7D%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5E%7BT%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5Cright%29%5C%5C%20%26%3D%5Cfrac%7Bn%7D%7B2%7D%5Cleft%28%5Cfrac%7B1%7D%7B2%7B%5Cpi%7D%7B%5Csigma%5E%7B2%7D%7D%7D%5Cright%29%5E%7B-1%7D%5Cleft%28-%5Cfrac%7B1%7D%7B2%7B%5Cpi%7D%7B%5Csigma%5E%7B4%7D%7D%7D%5Cright%29L%28%5Cmathbf%7B%5Cbeta%7D%2C%20%5Csigma%5E%7B2%7D%3B%5Cmathbf%7By%7D%2C%5Cmathbf%7BX%7D%29&plus;L%28%5Cmathbf%7B%5Cbeta%7D%2C%20%5Csigma%5E%7B2%7D%3B%5Cmathbf%7By%7D%2C%5Cmathbf%7BX%7D%29%5Cfrac%7B1%7D%7B2%5Csigma%5E%7B4%7D%7D%5Cleft%5B%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5E%7BT%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5Cright%5D%5C%5C%20%5Cend%7Balign*%7D"/>
+</p>
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20%26%3DL%28%5Cmathbf%7B%5Cbeta%7D%2C%20%5Csigma%5E%7B2%7D%3B%5Cmathbf%7By%7D%2C%5Cmathbf%7BX%7D%29%5Cleft%5B-%5Cfrac%7Bn%7D%7B2%5Csigma%5E%7B2%7D%7D&plus;%5Cfrac%7B1%7D%7B2%5Csigma%5E%7B4%7D%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5E%7BT%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5Cright%5D%5C%5C%20%26%3D%5Cfrac%7B1%7D%7B2%5Cpi%5E%7B2%7D%7DL%28%5Cmathbf%7B%5Cbeta%7D%2C%20%5Csigma%5E%7B2%7D%3B%5Cmathbf%7By%7D%2C%5Cmathbf%7BX%7D%29%5Cleft%5B-%20n&plus;%5Cfrac%7B1%7D%7B%5Csigma%5E%7B2%7D%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5E%7BT%7D%28%5Cmathbf%7By%7D-%5Cmathbf%7BX%7D%5Cmathbf%7B%5Cbeta%7D%29%5Cright%5D%20%5Cend%7Balign*%7D"/>
+   </p>
+   
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20%5Cfrac%7B%5Cpartial%20L%7D%7B%5Cpartial%20n%7D%3D-%28%5Cmathbf%7BC%7D%5Cmathbf%7B%5Cbeta%7D-%5Cmathbf%7Bm%7D%29%20%5Cend%7Balign*%7D"/>
+   </p>
+   
+<br/>
+
+Igualando as derivadas a zero:
 
 <br/>
