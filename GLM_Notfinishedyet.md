@@ -970,3 +970,29 @@ Daí,
 <br/>
 
 Suposições:
+<br/>
+
+*i)* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20E%5B%5Cmathbf%7B%5Cepsilon%7D%5D%3D%5Cmathbf%7B0%7D%20%5CRightarrow%20E%5B%5Cmathbf%7B%5Cepsilon_i%7D%5D%3D0%2C%20%5Cforall%20i%3D1%2C2%2C...%2Cn%3B"/>
+<br/>
+
+*ii)* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20VAR%5B%5Cmathbf%7B%5Cepsilon%7D%5D%3D%5Csigma%5E2%20%5Cmathbf%7BI_n%7D%5CRightarrow%20VAR%5B%5Cmathbf%7B%5Cepsilon_i%7D%5D%3D%5Csigma%5E2%3B%5Cforall_i"/> (Homocedasticidade);
+<br/>
+
+*iii)* <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20COV%5B%5Cepsilon_i%2C%5Cepsilon_j%5D%3D0%2C%20%5Cforall%20%5C%20i%5Cneq%7Bj%7D."/>
+
+<br/>
+
+Como o vetor <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Clarge%20%5Cmathbf%7B%5Cepsilon%7D"> tem distribuição normal n-variada e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20COV%5B%5Cepsilon_i%2C%5Cepsilon_j%5D%3D0%24%20%24%5Cforall%20i%5Cneq%20j"/>, então <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Clarge%20%5Cepsilon_i"/> e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cvarepsilon_j"/> são independentes.
+
+<br/>
+
+#### Estimação do vetor <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7B%5Cbeta%7D"/>
+
+<br/>
+
+Suponha que <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BY%7D%5Csim%20N_n%28%5Cmathbf%7BX%20%5Cbeta%7D%3B%5Csigma%5E2%5Cmathbf%7BI_n%7D%29."/>
+
+<br/>
+
+A função de verossimilhança é dada por:
+<br/>
