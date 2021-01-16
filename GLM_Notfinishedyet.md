@@ -1011,10 +1011,56 @@ O logaritimo da função de verossimilhança fica dado por:
    </p>
 <br/>
 
-Espaço paramétrico: <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7B%5CTheta%3D%5C%7B%28%5Cmathbf%7B%5Cbeta%7D%2C%5Csigma%5E2%29%3A%5Csigma%5E2%3E0%2C%20-%5Cinfty%5Cle%5Cmathbf%7B%5Cbeta%7D%5Cle%5Cinfty%5C%7D%7D"/>
+Espaço paramétrico: <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7B%5CTheta%3D%5C%7B%28%5Cmathbf%7B%5Cbeta%7D%2C%5Csigma%5E2%29%3A%5Csigma%5E2%3E0%2C%20-%5Cinfty%5Cle%5Cmathbf%7B%5Cbeta%7D%5Cle%5Cinfty%5C%7D%7D"/>.
 
 <br/>
 
-Encontrando as estimadores de Máxima Verossimilhança para <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7B%5Cbeta%7D"/> e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Csigma%5E2"/>.
+Encontrando os estimadores de Máxima Verossimilhança para <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7B%5Cbeta%7D"/> e <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Csigma%5E2"/>.
 
 <br/>
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20%5Cfrac%7B%5Cpartial%20ln%20%5BL%28%5Cbeta%2C%5Csigma%5E2%2CY%2CX%29%5D%7D%7B%5Cpartial%20%5Cbeta%7D%26%3D-%5Cfrac%7B1%7D%7B2%5Csigma%5E2%7D%20%5Cbf%7B%5B2X%5ET%20Y-2X%5ETX%5Cbeta%5D%7D%5C%5C%20%26%3D-%5Cfrac%7B1%7D%7B%5Csigma%5E2%7D%5B%5Cbf%7BX%5ETY-X%5ETX%5Cbeta%7D%5D%5C%5C%20%5Cfrac%7B%5Cpartial%20ln%20%5BL%5Cbf%7B%28%5Cbeta%2C%5Csigma%5E2%2CY%2CX%29%5D%7D%7D%7B%5Cpartial%20%5Cbeta%7D%26%3D0%5CRightarrow%20-%5Cfrac%7B1%7D%7B%5Csigma%5E2%7D%20%5Cbf%7B%5BX%5ETY-X%5ETX%5Chat%7B%5Cbeta%7D%5D%7D%3D0%5C%5C%20%5CRightarrow%20%5Cbf%7BX%5ETY-X%5ETX%5Chat%7B%5Cbeta%7D%7D%26%3D0%20%5CRightarrow%20%5Cbf%7BX%5ETY%3DX%5ETX%5Chat%7B%5Cbeta%7D%7D%5C%5C%20%5CRightarrow%20%5Cbf%7B%28X%5ETX%29%5E%7B-1%7DX%5ETY%7D%26%3D%5Cbf%7B%28X%5ETX%29%5E%7B-1%7DX%5ETX%5Cbf%7B%5Chat%7B%5Cbeta%7D%7D%7D%5C%5C%20%5CRightarrow%20%5Cbf%7B%5Chat%7B%5Cbeta%7D%7D%26%3D%5Cbf%7B%28X%5ETX%29%5E%7B-1%7DX%5ETY%7D%20%5Cend%7Balign*%7D"/>
+   </p>
+
+<br/>
+
+Agora, iremos encontrar os estimador de Máxima Verossimilhança para <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Csigma%5E2"/>:
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbegin%7Balign*%7D%20%5Cfrac%7B%5Cpartial%20ln%20%5BL%5Cbf%7B%28%5Cbeta%2C%5Csigma%5E2%2CY%2CX%29%5D%7D%7D%7B%5Cpartial%20%5Csigma%5E2%7D%26%3D-%5Cfrac%7Bn%7D%7B2%7D%5Ccdot%5Cfrac%7B1%7D%7B2%5Cpi%20%5Csigma%5E2%7D%5Ccdot2%5Cpi&plus;%5Cfrac%7B1%7D%7B2%5Csigma%5E4%7D%5Cbf%7B%28Y-X%5Cbeta%29%5ET%20%28Y-X%5Cbeta%29%7D%5C%5C%20%5Cpartial%20ln%20%5BL%5Cbf%7B%28%5Cbeta%2C%5Csigma%5E2%2CY%2CX%29%5D%7D%26%3D0%20%5CRightarrow%20-%5Cfrac%7Bn%7D%7B2%5Chat%7B%5Csigma%7D%5E2%7D&plus;%5Cfrac%7B1%7D%7B2%5Chat%7B%5Csigma%7D%5E4%7D%28Y-%5Cbf%7BX%7D%5Chat%7B%5Cbeta%7D%29%5ET%28Y-%5Cbf%7BX%5Chat%7B%5Cbeta%7D%7D%29%3D0%5C%5C%20%5CRightarrow%20%5Cfrac%7Bn%7D%7B2%5Chat%7B%5Csigma%7D%5E2%7D%26%3D%5Cfrac%7B1%7D%7B2%5Chat%7B%5Csigma%7D%5E4%7D%5Cbf%7B%28Y-X%5Chat%7B%5Cbeta%7D%29%5ET%28Y-X%5Chat%7B%5Cbeta%7D%29%7D%5C%5C%20%5CRightarrow%20%5Cfrac%7Bn%7D%7B2%7D%26%3D%5Cfrac%7B1%7D%7B2%5Chat%7B%5Csigma%7D%5E2%7D%5Cbf%7B%28Y-X%5Chat%7B%5Cbeta%7D%29%5ET%20%28Y-X%5Chat%7B%5Cbeta%7D%29%7D%5C%5C%20%5CRightarrow%20n%26%3D%5Cfrac%7B1%7D%7B%5Chat%7B%5Csigma%7D%5E2%7D%5Cbf%7B%28Y-X%5Chat%7B%5Cbeta%7D%29%5ET%20%28Y-X%5Chat%7B%5Cbeta%7D%29%7D%5C%5C%20%5CRightarrow%20%5Chat%7B%5Csigma%7D%5E2%26%3D%5Cfrac%7B1%7D%7Bn%7D%5Cbf%7B%28Y-X%5Chat%7B%5Cbeta%7D%29%5ET%20%28Y-X%5Chat%7B%5Cbeta%7D%29%7D%20%5Cend%7Balign*%7D"/>
+   </p>
+<br/>
+
+**Ou**
+
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cmathbf%7B%5Chat%7B%5Csigma%7D%5E2%3D%5Cfrac%7B1%7D%7Bn%7D%5Csum%5Climits_%7Bi%3D1%7D%5En%5Chat%7B%5Cepsilon_i%7D%5E2%7D"/>
+   </p>
+<br/>
+
+Em que <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7B%5Chat%7B%5Csigma%7D%5E2%3D%5Cfrac%7B1%7D%7Bn%7D%5Csum%5Climits_%7Bi%3D1%7D%5En%5Chat%7B%5Cepsilon_i%7D%5E2%7D"/>**=** **_SQRes_**.
+<br/>
+
+O vetor de médias <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7B%5Cmu%7D%3D%28%5Cmu_1%2C...%2C%5Cmu_n%29%5ET"/> é estimado por <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Chat%7B%5Cmu%7D%3D%5Cbf%7BX%5Chat%7B%5Cbeta%7D%7D"/>, ou seja:
+<br/>
+
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7B%5Chat%7B%5Cmu%7D%3DX%28X%5ETX%29%5E%7B-1%7DX%5ETY%20%3D%20HY%7D"/>
+   </p>
+<br/>
+
+Em que <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7BH%3DX%7D%28X%5ETX%29%5E%7B-1%7DX"/> é chamado de "matriz _HAT_" e representa a matriz de projeção ortogonal do <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbb%7BR%7D%5En"/> sobre o subspaço vetorial gerado pelas colunas da matriz <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cbf%7BX%7D"/>.
+<br/>
+
+_OBS_: <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cmathbf%7BH%7D"/> é simétrica e idempotente.
+
+<br/>
+
+i. $\bf{H=H^T}$ (H é simetrica).
+<br/>
+
+\ De fato,
